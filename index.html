@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murtaza weds Rukaiya &amp; Jamila weds Abbas | Wedding Invitation &amp; RSVP</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts matching the exact calligraphy & serif typography of the card -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600;1,700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF8F3',
+            cream: '#F4EFE6',
+            rosegold: '#C89D7C',
+            rosegoldDark: '#B07D56',
+            champagne: '#D4AF37',
+            sage: '#6B8E6E',
+            olive: '#49654C',
+            eucalyptus: '#A3B8A8',
+            espresso: '#1A1715'
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', '"Alex Brush"', 'cursive'],
+            weds: ['"Alex Brush"', '"Great Vibes"', 'cursive'],
+            serifCard: ['"Cormorant Garamond"', '"Playfair Display"', 'Georgia', 'serif'],
+            displayCard: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+            arabic: ['"Amiri"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-ivory: #FAF8F3;
+      --arch-border: #CCA17F;
+      --gold-accent: #C5A059;
+      --ink-dark: #181512;
+    }
+
+    body {
+      background-color: #EFECE6;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(200, 157, 124, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(107, 142, 110, 0.12) 0%, transparent 50%);
+      color: var(--ink-dark);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      overflow-x: hidden;
+    }
+
+    /* Subtle watercolor paper texture overlay */
+    .paper-texture {
+      background-color: #FAF8F3;
+      background-image:
+        radial-gradient(at 15% 15%, rgba(255, 255, 255, 0.8) 0px, transparent 60%),
+        radial-gradient(at 85% 30%, rgba(235, 229, 216, 0.45) 0px, transparent 55%),
+        radial-gradient(at 50% 85%, rgba(243, 237, 226, 0.6) 0px, transparent 65%),
+        repeating-linear-gradient(45deg, rgba(200, 157, 124, 0.018) 0px, rgba(200, 157, 124, 0.018) 2px, transparent 2px, transparent 8px);
+    }
+
+    /* The signature Rose-Gold Arch Frame from the uploaded card */
+    .invitation-arch {
+      border-top-left-radius: 9999px;
+      border-top-right-radius: 9999px;
+      border-top: 3.5px solid #CCA17F;
+      border-left: 3.5px solid #CCA17F;
+      border-right: 3.5px solid #CCA17F;
+      border-bottom: none;
+      position: relative;
+      box-shadow: inset 0 2px 18px rgba(204, 161, 127, 0.12);
+    }
+
+    /* Gentle Botanical Sway Animations */
+    @keyframes swayLeft {
+      0%, 100% { transform: rotate(0deg) translateY(0px); }
+      50% { transform: rotate(2.4deg) translateY(3px); }
+    }
+    @keyframes swayRight {
+      0%, 100% { transform: rotate(0deg) translateY(0px); }
+      50% { transform: rotate(-2.4deg) translateY(3px); }
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-5px) scale(1.015); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { filter: drop-shadow(0 0 4px rgba(204, 161, 127, 0.35)); transform: scale(1); }
+      50% { filter: drop-shadow(0 0 12px rgba(204, 161, 127, 0.75)); transform: scale(1.06); }
+    }
+    @keyframes shimmerGold {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    @keyframes shakeError {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-8px); }
+      40%, 80% { transform: translateX(8px); }
+    }
+
+    .sway-left {
+      transform-origin: top left;
+      animation: swayLeft 6.5s ease-in-out infinite;
+    }
+    .sway-right {
+      transform-origin: top right;
+      animation: swayRight 7s ease-in-out infinite;
+    }
+    .sway-center {
+      transform-origin: top center;
+      animation: floatSlow 5.5s ease-in-out infinite;
+    }
+    .sway-bottom-left {
+      transform-origin: bottom left;
+      animation: swayLeft 7.5s ease-in-out infinite;
+    }
+    .sway-bottom-right {
+      transform-origin: bottom right;
+      animation: swayRight 8s ease-in-out infinite;
+    }
+    .star-sparkle {
+      animation: pulseGlow 3.8s ease-in-out infinite;
+    }
+    .shake-anim {
+      animation: shakeError 0.45s ease-in-out;
+    }
+
+    /* Real-Time Newly Arrived Row Highlight Animation */
+    @keyframes liveRowFlash {
+      0% {
+        background-color: rgba(212, 175, 55, 0.38);
+        transform: translateY(-6px);
+      }
+      50% {
+        background-color: rgba(107, 142, 110, 0.22);
+        transform: translateY(0);
+      }
+      100% {
+        background-color: transparent;
+        transform: translateY(0);
+      }
+    }
+    .row-live-flash {
+      animation: liveRowFlash 2.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    /* Scroll Reveal Transitions */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(22px) scale(0.985);
+      transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1), transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-item.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    /* Envelope Welcome Curtain transition */
+    #welcome-curtain {
+      transition: opacity 0.95s cubic-bezier(0.4, 0, 0.2, 1), transform 0.95s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #welcome-curtain.curtain-open {
+      opacity: 0;
+      transform: scale(1.08);
+      pointer-events: none;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4EFE6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C89D7C;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B07D56;
+    }
+
+    /* Gold shimmer button */
+    .btn-rosegold {
+      background: linear-gradient(135deg, #C89D7C 0%, #B3805A 50%, #D4AF37 100%);
+      background-size: 200% auto;
+      transition: all 0.35s ease;
+    }
+    .btn-rosegold:hover {
+      background-position: right center;
+      box-shadow: 0 8px 22px -4px rgba(179, 128, 90, 0.55);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen relative selection:bg-rosegold/25 selection:text-espresso">
+
+  <!-- Floating Gold Dust Particle Canvas -->
+  <canvas id="particle-canvas" class="fixed inset-0 pointer-events-none z-20"></canvas>
+
+  <!-- ===================================================================== -->
+  <!-- 1. ANIMATED ENVELOPE WELCOME CURTAIN                                  -->
+  <!-- ===================================================================== -->
+  <div id="welcome-curtain" class="fixed inset-0 z-40 flex items-center justify-center p-4 bg-[#EFECE6]/95 backdrop-blur-md">
+    <div class="relative w-full max-w-lg paper-texture border-2 border-[#CCA17F] rounded-2xl shadow-2xl p-8 sm:p-10 text-center overflow-hidden">
+      
+      <h1 class="font-script text-4xl sm:text-5xl text-espresso leading-tight my-2">
+        Murtaza <span class="font-weds text-2xl sm:text-3xl">Weds</span> Rukaiya
+      </h1>
+      <h2 class="font-script text-4xl sm:text-5xl text-espresso leading-tight mb-4">
+        Jamila <span class="font-weds text-2xl sm:text-3xl">Weds</span> Abbas
+      </h2>
+      <p class="font-serifCard italic text-base sm:text-lg text-stone-700 mb-6">
+        Sunday, 17th January 2027 &bull; 10th Shaban Ul Karim 1448h
+      </p>
+      <button id="open-invitation-btn" type="button"
+        class="btn-rosegold text-white font-displayCard font-bold uppercase tracking-widest text-xs sm:text-sm px-8 py-3.5 rounded-full shadow-lg inline-flex items-center gap-2.5 cursor-pointer">
+        <i class="fa-regular fa-envelope-open"></i>
+        <span>Open Wedding Invitation</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- FLOATING QUICK ACTION BAR (Jump to RSVP & Replay Envelope)            -->
+  <!-- ===================================================================== -->
+  <div class="fixed bottom-4 right-4 z-30 flex items-center gap-2">
+    <button id="replay-envelope-btn" type="button" title="Replay Envelope Opening Animation"
+      class="bg-[#FAF8F3]/95 hover:bg-white text-espresso border border-[#CCA17F] text-xs font-displayCard font-semibold tracking-wider uppercase px-3.5 py-2.5 rounded-full shadow-lg flex items-center gap-1.5 transition cursor-pointer">
+      <i class="fa-solid fa-rotate-left text-[#B07D56]"></i>
+      <span class="hidden sm:inline">Replay Card</span>
+    </button>
+    <a href="#rsvp-section"
+      class="btn-rosegold text-white text-xs sm:text-sm font-displayCard font-semibold tracking-wider uppercase px-4 py-2.5 rounded-full shadow-lg flex items-center gap-2">
+      <i class="fa-regular fa-calendar-check"></i>
+      <span>RSVP Now</span>
+    </a>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 2. MAIN WEDDING CARD CONTAINER (EXACT REPLICA OF UPLOADED IMAGE)      -->
+  <!-- ===================================================================== -->
+  <main class="relative z-10 py-6 sm:py-12 px-2 sm:px-6 flex flex-col items-center">
+
+    <!-- THE CARD SHEET -->
+    <article id="wedding-card"
+      class="relative w-full max-w-[820px] paper-texture shadow-[0_20px_60px_rgba(30,25,20,0.16)] rounded-sm overflow-hidden px-4 sm:px-10 md:px-14 pt-12 sm:pt-16 pb-10 sm:pb-14 border border-[#E5DEC9]">
+
+      <!-- =============================================================== -->
+      <!-- TOP BOTANICAL CANOPY (Exact Watercolor Foliage & White Flowers) -->
+      <!-- =============================================================== -->
+
+      <!-- Top-Left Cascading Sage, Olive, Eucalyptus & Gold Foliage -->
+      <div class="absolute -top-2 -left-2 w-48 sm:w-72 md:w-80 pointer-events-none z-20 sway-left">
+        <svg viewBox="0 0 380 390" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-sm">
+          <!-- Pale Eucalyptus background circles -->
+          <circle cx="155" cy="70" r="32" fill="#B8C8BC" opacity="0.45"/>
+          <circle cx="215" cy="95" r="28" fill="#C4D2C7" opacity="0.45"/>
+          <circle cx="260" cy="135" r="24" fill="#CFDAD1" opacity="0.45"/>
+          <circle cx="110" cy="115" r="28" fill="#B8C8BC" opacity="0.4"/>
+
+          <!-- Rose-gold metallic fern branch (left hanging) -->
+          <path d="M25,65 Q65,175 62,315" stroke="#C59B6D" stroke-width="2" fill="none" opacity="0.85"/>
+          <g fill="#C89B6E" opacity="0.72">
+            <ellipse cx="42" cy="145" rx="22" ry="7" transform="rotate(42 42 145)"/>
+            <ellipse cx="75" cy="160" rx="24" ry="7" transform="rotate(-25 75 160)"/>
+            <ellipse cx="40" cy="185" rx="25" ry="7" transform="rotate(48 40 185)"/>
+            <ellipse cx="82" cy="198" rx="24" ry="7" transform="rotate(-22 82 198)"/>
+            <ellipse cx="44" cy="225" rx="22" ry="6.5" transform="rotate(52 44 225)"/>
+            <ellipse cx="82" cy="238" rx="21" ry="6.5" transform="rotate(-18 82 238)"/>
+            <ellipse cx="50" cy="265" rx="19" ry="6" transform="rotate(58 50 265)"/>
+            <ellipse cx="78" cy="272" rx="18" ry="6" transform="rotate(-15 78 272)"/>
+            <ellipse cx="62" cy="300" rx="17" ry="5.5" transform="rotate(82 62 300)"/>
+          </g>
+
+          <!-- Second golden sprig -->
+          <path d="M70,110 Q115,180 148,265" stroke="#C59B6D" stroke-width="1.6" fill="none" opacity="0.75"/>
+          <g fill="#D2A87C" opacity="0.65">
+            <ellipse cx="105" cy="165" rx="20" ry="6" transform="rotate(20 105 165)"/>
+            <ellipse cx="122" cy="198" rx="19" ry="6" transform="rotate(25 122 198)"/>
+            <ellipse cx="136" cy="230" rx="17" ry="5.5" transform="rotate(32 136 230)"/>
+            <ellipse cx="148" cy="260" rx="15" ry="5" transform="rotate(60 148 260)"/>
+          </g>
+
+          <!-- Main Olive & Sage Green Leaf Branches -->
+          <path d="M0,12 Q95,48 210,15" stroke="#4F6D52" stroke-width="2.2" fill="none"/>
+          <path d="M10,0 Q55,95 25,215" stroke="#4F6D52" stroke-width="2.2" fill="none"/>
+
+          <!-- Deep Olive & Sage Leaves -->
+          <path d="M125,8 C135,38 122,68 96,82 C88,52 100,22 125,8 Z" fill="#5D7B5A" opacity="0.9"/>
+          <path d="M190,15 C168,45 142,60 112,62 C132,34 158,18 190,15 Z" fill="#466245" opacity="0.92"/>
+          <path d="M55,25 C82,45 96,74 90,104 C62,85 48,56 55,25 Z" fill="#6F8F6D" opacity="0.88"/>
+          <path d="M8,45 C42,62 60,92 52,122 C22,102 6,75 8,45 Z" fill="#466245" opacity="0.9"/>
+          <path d="M22,95 C52,115 62,145 48,175 C22,152 12,125 22,95 Z" fill="#789676" opacity="0.82"/>
+          <path d="M2,135 C25,158 32,188 18,218 C0,192 -4,165 2,135 Z" fill="#4F6D52" opacity="0.88"/>
+        </svg>
+      </div>
+
+      <!-- Top-Center White Rose & Botanical Bouquet over the Arch -->
+      <div class=" absolute -top-3 left-1/2 -translate-x-1/2 w-56 sm:w-80 md:w-96 pointer-events-none z-20 sway-center">
+        <svg viewBox="0 0 420 210" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-sm">
+          <!-- Soft sage & eucalyptus leaves behind the white flower -->
+          <ellipse cx="145" cy="42" rx="34" ry="12" transform="rotate(-18 145 42)" fill="#49654C" opacity="0.85"/>
+          <ellipse cx="115" cy="28" rx="28" ry="10" transform="rotate(14 115 28)" fill="#6B8E6E" opacity="0.8"/>
+          <ellipse cx="275" cy="38" rx="32" ry="12" transform="rotate(22 275 38)" fill="#49654C" opacity="0.85"/>
+          <ellipse cx="215" cy="95" rx="30" ry="11" transform="rotate(55 215 95)" fill="#5C7C5E" opacity="0.85"/>
+          <ellipse cx="170" cy="85" rx="28" ry="9" transform="rotate(-48 170 85)" fill="#B5C7B9" opacity="0.7"/>
+          <circle cx="248" cy="82" r="14" fill="#B8C8BC" opacity="0.55"/>
+          <circle cx="268" cy="105" r="11" fill="#C4D2C7" opacity="0.5"/>
+          <circle cx="235" cy="118" r="10" fill="#CFDAD1" opacity="0.5"/>
+
+          <!-- Center Ivory/White Watercolor Rose Blossom -->
+          <g transform="translate(205, 46)">
+            <circle cx="0" cy="0" r="36" fill="#F5F2EA" opacity="0.95"/>
+            <path d="M-26,-10 C-18,-32 18,-32 26,-10 C34,12 18,32 0,34 C-18,32 -34,12 -26,-10 Z" fill="#FFFFFF" stroke="#E4DEC8" stroke-width="1.2"/>
+            <path d="M-18,-6 C-12,-22 12,-22 18,-6 C22,8 12,22 0,24 C-12,22 -22,8 -18,-6 Z" fill="#FAF7EE" stroke="#DDD5BE" stroke-width="1"/>
+            <path d="M-10,-2 C-6,-12 6,-12 10,-2 C12,6 6,12 0,13 C-6,12 -12,6 -10,-2 Z" fill="#F2EBD9"/>
+            <!-- Subtle warm gold stamen center -->
+            <circle cx="-2" cy="1" r="4" fill="#D8B878" opacity="0.7"/>
+            <circle cx="3" cy="-2" r="3" fill="#C59B5F" opacity="0.6"/>
+          </g>
+
+          <!-- Delicate baby's breath & small white buds -->
+          <g fill="#FFFFFF" stroke="#D8D2C0" stroke-width="0.8">
+            <circle cx="155" cy="22" r="6"/>
+            <circle cx="252" cy="24" r="7"/>
+            <circle cx="266" cy="45" r="5.5"/>
+            <circle cx="285" cy="58" r="4"/>
+            <circle cx="295" cy="42" r="3.5"/>
+            <circle cx="142" cy="58" r="4.5"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Top-Right Cascading Sage, Olive, Eucalyptus & Gold Foliage -->
+      <div class="absolute -top-2 -right-2 w-48 sm:w-72 md:w-80 pointer-events-none z-20 sway-right">
+        <svg viewBox="0 0 380 390" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-sm scale-x-[-1]">
+          <!-- Pale Eucalyptus background circles -->
+          <circle cx="155" cy="70" r="32" fill="#B8C8BC" opacity="0.45"/>
+          <circle cx="215" cy="95" r="28" fill="#C4D2C7" opacity="0.45"/>
+          <circle cx="260" cy="135" r="24" fill="#CFDAD1" opacity="0.45"/>
+          <circle cx="110" cy="115" r="28" fill="#B8C8BC" opacity="0.4"/>
+
+          <!-- Rose-gold metallic fern branch -->
+          <path d="M25,65 Q65,175 62,315" stroke="#C59B6D" stroke-width="2" fill="none" opacity="0.85"/>
+          <g fill="#C89B6E" opacity="0.72">
+            <ellipse cx="42" cy="145" rx="22" ry="7" transform="rotate(42 42 145)"/>
+            <ellipse cx="75" cy="160" rx="24" ry="7" transform="rotate(-25 75 160)"/>
+            <ellipse cx="40" cy="185" rx="25" ry="7" transform="rotate(48 40 185)"/>
+            <ellipse cx="82" cy="198" rx="24" ry="7" transform="rotate(-22 82 198)"/>
+            <ellipse cx="44" cy="225" rx="22" ry="6.5" transform="rotate(52 44 225)"/>
+            <ellipse cx="82" cy="238" rx="21" ry="6.5" transform="rotate(-18 82 238)"/>
+            <ellipse cx="50" cy="265" rx="19" ry="6" transform="rotate(58 50 265)"/>
+            <ellipse cx="78" cy="272" rx="18" ry="6" transform="rotate(-15 78 272)"/>
+            <ellipse cx="62" cy="300" rx="17" ry="5.5" transform="rotate(82 62 300)"/>
+          </g>
+
+          <!-- Second golden sprig -->
+          <path d="M70,110 Q115,180 148,265" stroke="#C59B6D" stroke-width="1.6" fill="none" opacity="0.75"/>
+          <g fill="#D2A87C" opacity="0.65">
+            <ellipse cx="105" cy="165" rx="20" ry="6" transform="rotate(20 105 165)"/>
+            <ellipse cx="122" cy="198" rx="19" ry="6" transform="rotate(25 122 198)"/>
+            <ellipse cx="136" cy="230" rx="17" ry="5.5" transform="rotate(32 136 230)"/>
+            <ellipse cx="148" cy="260" rx="15" ry="5" transform="rotate(60 148 260)"/>
+          </g>
+
+          <!-- Main Olive & Sage Green Leaf Branches -->
+          <path d="M0,12 Q95,48 210,15" stroke="#4F6D52" stroke-width="2.2" fill="none"/>
+          <path d="M10,0 Q55,95 25,215" stroke="#4F6D52" stroke-width="2.2" fill="none"/>
+
+          <!-- Deep Olive & Sage Leaves -->
+          <path d="M125,8 C135,38 122,68 96,82 C88,52 100,22 125,8 Z" fill="#5D7B5A" opacity="0.9"/>
+          <path d="M190,15 C168,45 142,60 112,62 C132,34 158,18 190,15 Z" fill="#466245" opacity="0.92"/>
+          <path d="M55,25 C82,45 96,74 90,104 C62,85 48,56 55,25 Z" fill="#6F8F6D" opacity="0.88"/>
+          <path d="M8,45 C42,62 60,92 52,122 C22,102 6,75 8,45 Z" fill="#466245" opacity="0.9"/>
+          <path d="M22,95 C52,115 62,145 48,175 C22,152 12,125 22,95 Z" fill="#789676" opacity="0.82"/>
+          <path d="M2,135 C25,158 32,188 18,218 C0,192 -4,165 2,135 Z" fill="#4F6D52" opacity="0.88"/>
+        </svg>
+      </div>
+
+      <!-- Middle-Left & Middle-Right Edge Botanical Sprigs (Matching Uploaded Image) -->
+      <div class="absolute top-[54%] -left-2 w-16 sm:w-24 pointer-events-none z-20 sway-left">
+        <svg viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,130 Q35,85 48,25" stroke="#5E7B62" stroke-width="1.5" fill="none"/>
+          <ellipse cx="26" cy="52" rx="14" ry="8" transform="rotate(-30 26 52)" fill="#9EB7A5" opacity="0.8"/>
+          <ellipse cx="42" cy="72" rx="13" ry="7" transform="rotate(20 42 72)" fill="#7E9C88" opacity="0.8"/>
+          <circle cx="15" cy="112" r="8" fill="#D5B06A" opacity="0.75"/>
+          <circle cx="32" cy="122" r="7" fill="#E0C180" opacity="0.75"/>
+          <circle cx="18" cy="136" r="7" fill="#D5B06A" opacity="0.75"/>
+        </svg>
+      </div>
+      <div class="absolute top-[54%] -right-2 w-16 sm:w-24 pointer-events-none z-20 sway-right">
+        <svg viewBox="0 0 100 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-x-[-1]">
+          <path d="M0,130 Q35,85 48,25" stroke="#5E7B62" stroke-width="1.5" fill="none"/>
+          <ellipse cx="26" cy="52" rx="14" ry="8" transform="rotate(-30 26 52)" fill="#9EB7A5" opacity="0.8"/>
+          <ellipse cx="42" cy="72" rx="13" ry="7" transform="rotate(20 42 72)" fill="#7E9C88" opacity="0.8"/>
+          <circle cx="15" cy="112" r="8" fill="#D5B06A" opacity="0.75"/>
+          <circle cx="32" cy="122" r="7" fill="#E0C180" opacity="0.75"/>
+          <circle cx="18" cy="136" r="7" fill="#D5B06A" opacity="0.75"/>
+        </svg>
+      </div>
+
+      <!-- Bottom-Left & Bottom-Right Botanical Corner Clusters -->
+      <div class="absolute bottom-0 left-0 w-28 sm:w-40 pointer-events-none z-20 sway-bottom-left">
+        <svg viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,220 Q45,140 75,55" stroke="#4F6D52" stroke-width="1.8" fill="none"/>
+          <ellipse cx="52" cy="95" rx="22" ry="12" transform="rotate(-25 52 95)" fill="#89A894" opacity="0.85"/>
+          <ellipse cx="78" cy="122" rx="20" ry="11" transform="rotate(22 78 122)" fill="#6C8E79" opacity="0.85"/>
+          <ellipse cx="38" cy="142" rx="19" ry="11" transform="rotate(-30 38 142)" fill="#9BB5A3" opacity="0.85"/>
+          <circle cx="88" cy="185" r="10" fill="#D5B06A" opacity="0.75"/>
+          <circle cx="106" cy="198" r="9" fill="#E2C486" opacity="0.75"/>
+          <circle cx="72" cy="202" r="9" fill="#D5B06A" opacity="0.75"/>
+        </svg>
+      </div>
+      <div class="absolute bottom-0 right-0 w-28 sm:w-40 pointer-events-none z-20 sway-bottom-right">
+        <svg viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="scale-x-[-1]">
+          <path d="M10,220 Q45,140 75,55" stroke="#4F6D52" stroke-width="1.8" fill="none"/>
+          <ellipse cx="52" cy="95" rx="22" ry="12" transform="rotate(-25 52 95)" fill="#89A894" opacity="0.85"/>
+          <ellipse cx="78" cy="122" rx="20" ry="11" transform="rotate(22 78 122)" fill="#6C8E79" opacity="0.85"/>
+          <ellipse cx="38" cy="142" rx="19" ry="11" transform="rotate(-30 38 142)" fill="#9BB5A3" opacity="0.85"/>
+          <circle cx="88" cy="185" r="10" fill="#D5B06A" opacity="0.75"/>
+          <circle cx="106" cy="198" r="9" fill="#E2C486" opacity="0.75"/>
+          <circle cx="72" cy="202" r="9" fill="#D5B06A" opacity="0.75"/>
+        </svg>
+      </div>
+
+      <!-- =============================================================== -->
+      <!-- ROSE-GOLD ARCH INNER FRAME & EXACT INVITATION TEXT              -->
+      <!-- =============================================================== -->
+      <div class="invitation-arch relative z-10 pt-20 sm:pt-28 pb-6 px-4 sm:px-10 md:px-14 text-center">
+
+        <!-- Faint Watermark Botanical Stems in Lower Background (Exact Match to Card) -->
+        <div class="absolute inset-x-0 bottom-0 h-[46%] pointer-events-none opacity-[0.16] flex justify-between items-end px-6 sm:px-14 overflow-hidden">
+          <svg viewBox="0 0 200 350" class="w-40 sm:w-56 h-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M90,350 Q105,220 75,70" stroke="#5A6E58" stroke-width="2"/>
+            <path d="M96,250 Q135,190 155,120" stroke="#5A6E58" stroke-width="1.5"/>
+            <path d="M88,210 Q45,160 30,95" stroke="#5A6E58" stroke-width="1.5"/>
+            <circle cx="75" cy="70" r="8" fill="#8A795D"/>
+            <circle cx="155" cy="120" r="7" fill="#8A795D"/>
+            <circle cx="30" cy="95" r="7" fill="#8A795D"/>
+          </svg>
+          <svg viewBox="0 0 200 350" class="w-40 sm:w-56 h-auto scale-x-[-1]" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M90,350 Q105,220 75,70" stroke="#5A6E58" stroke-width="2"/>
+            <path d="M96,250 Q135,190 155,120" stroke="#5A6E58" stroke-width="1.5"/>
+            <path d="M88,210 Q45,160 30,95" stroke="#5A6E58" stroke-width="1.5"/>
+            <circle cx="75" cy="70" r="8" fill="#8A795D"/>
+            <circle cx="155" cy="120" r="7" fill="#8A795D"/>
+            <circle cx="30" cy="95" r="7" fill="#8A795D"/>
+          </svg>
+        </div>
+
+        <!-- 1. BISMILLAH CALLIGRAPHY -->
+        <div class="reveal-item mb-4 sm:mb-5">
+          <div class="inline-block px-4 py-1">
+            <p class="font-arabic text-2xl sm:text-4xl md:text-[40px] text-espresso tracking-wide leading-relaxed select-none" dir="rtl">
+              بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </p>
+          </div>
+        </div>
+
+       
+
+        <!-- 3. HOST INVITATION LINE -->
+        <div class="reveal-item max-w-[630px] mx-auto mb-8 sm:mb-10">
+          <p class="font-displayCard font-bold text-[#181512] text-[16.5px] sm:text-[21px] md:text-[22.5px] leading-[1.38]">
+            We coordinally invite you to the wedding of
+          </p>
+        </div>
+
+        <!-- 4. FIRST COUPLE: Murtaza Weds Rukaiya -->
+        <div class="reveal-item grid grid-cols-1 sm:grid-cols-11 items-center gap-y-3 sm:gap-x-2 my-6 sm:my-8">
+          <!-- Groom: Murtaza -->
+          <div class="sm:col-span-5 text-center">
+            <h2 class="font-script text-[52px] sm:text-[64px] md:text-[72px] text-[#141210] leading-[1.05] tracking-normal">
+              Murtaza
+            </h2>
+            
+          </div>
+
+          <!-- Weds -->
+          <div class="sm:col-span-1 flex items-center justify-center py-1 sm:py-0">
+            <span class="font-weds text-[34px] sm:text-[40px] md:text-[44px] text-[#141210] leading-none">
+              &
+            </span>
+          </div>
+
+          <!-- Bride: Rukaiya -->
+          <div class="sm:col-span-5 text-center">
+            <h2 class="font-script text-[52px] sm:text-[64px] md:text-[72px] text-[#141210] leading-[1.05] tracking-normal">
+              Rukaiya
+            </h2>
+                      </div>
+        </div>
+
+        <!-- 5. SECOND COUPLE: Jamila Weds Abbas -->
+        <div class="reveal-item grid grid-cols-1 sm:grid-cols-11 items-center gap-y-3 sm:gap-x-2 my-6 sm:my-9">
+          <!-- Bride: Jamila -->
+          <div class="sm:col-span-5 text-center">
+            <h2 class="font-script text-[52px] sm:text-[64px] md:text-[72px] text-[#141210] leading-[1.05] tracking-normal">
+              Jamila
+            </h2>
+                     </div>
+
+          <!-- Weds -->
+          <div class="sm:col-span-1 flex items-center justify-center py-1 sm:py-0">
+            <span class="font-weds text-[34px] sm:text-[40px] md:text-[44px] text-[#141210] leading-none">
+              &
+            </span>
+          </div>
+
+          <!-- Groom: Abbas -->
+          <div class="sm:col-span-5 text-center">
+            <h2 class="font-script text-[52px] sm:text-[64px] md:text-[72px] text-[#141210] leading-[1.05] tracking-normal">
+              Abbas
+            </h2>
+                      </div>
+        </div>
+
+               </div>
+
+        <!-- 7. PROGRAM INSHALLAH HEADER & GOLD STAR DIVIDER -->
+        <div class="reveal-item mt-6 mb-4">
+          <h3 class="font-displayCard font-bold text-[#141210] text-[24px] sm:text-[31px] md:text-[34px] tracking-wide">
+            Program Inshallah
+          </h3>
+          <!-- Tapered Rose-Gold Line with 4-Point Star Ornament -->
+          <div class="flex items-center justify-center gap-2 max-w-[340px] mx-auto mt-1">
+            <div class="h-[1.5px] flex-1 bg-gradient-to-r from-transparent via-[#CCA17F] to-[#CCA17F]"></div>
+            <svg class="w-5 h-5 text-[#CCA17F] star-sparkle" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0 C13.5 8.5 15.5 10.5 24 12 C15.5 13.5 13.5 15.5 12 24 C10.5 15.5 8.5 13.5 0 12 C8.5 10.5 10.5 8.5 12 0 Z"/>
+            </svg>
+            <div class="h-[1.5px] flex-1 bg-gradient-to-l from-transparent via-[#CCA17F] to-[#CCA17F]"></div>
+          </div>
+        </div>
+
+        <!-- 8. DATE, TIME & VENUE (NO INVITEES LINE AS STRICTLY INSTRUCTED) -->
+        <div class="reveal-item space-y-1.5 my-5">
+          <p class="font-displayCard font-bold text-[#141210] text-[17px] sm:text-[22px] md:text-[24px] leading-snug">
+            17th January 2027, 10th Shaban Ul Karim 1448h
+          </p>
+          <p class="font-displayCard font-bold text-[#141210] text-[17px] sm:text-[22px] md:text-[24px] leading-snug">
+            Sunday @ 08:00PM
+          </p>
+          <p class="font-displayCard font-bold text-[#141210] text-[17px] sm:text-[22px] md:text-[24px] leading-snug pt-0.5">
+            Venue:- Saifee Mohallah Mawaid Indore
+          </p>
+        </div>
+
+        <!-- 9. CLOSING LINES -->
+        <div class="reveal-item mt-7 mb-4 space-y-1.5">
+          <p class="font-displayCard font-bold text-[#141210] text-[19px] sm:text-[24px] md:text-[26px]">
+            Awaiting Your Presence..!!
+          </p>
+          <p class="font-displayCard font-bold text-[#141210] text-[18px] sm:text-[24px] md:text-[26.5px]">
+            Shakur Wala Family, Relatives &amp; Friends
+          </p>
+        </div>
+
+      </div>
+      <!-- END ARCH FRAME -->
+
+      <!-- BOTTOM ROSE-GOLD HORIZONTAL BARS & LARGE 4-POINT STAR ORNAMENT (Matching Card Footer) -->
+      <div class="relative z-10 flex items-center justify-center gap-5 sm:gap-8 px-6 sm:px-14 pt-2 pb-1">
+        <div class="h-[4px] flex-1 bg-[#CCA17F]/85 rounded-full"></div>
+        <svg class="w-12 h-12 sm:w-14 sm:h-14 text-[#CCA17F] star-sparkle shrink-0" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0 C13.6 8.4 15.6 10.4 24 12 C15.6 13.6 13.6 15.6 12 24 C10.4 15.6 8.4 13.6 0 12 C8.4 10.4 10.4 8.4 12 0 Z"/>
+        </svg>
+        <div class="h-[4px] flex-1 bg-[#CCA17F]/85 rounded-full"></div>
+      </div>
+
+    </article>
+
+    <!-- =================================================================== -->
+    <!-- 3. LIVE COUNTDOWN & VENUE DIRECTIONS SECTION                        -->
+    <!-- =================================================================== -->
+    <section class="w-full max-w-[820px] mt-8 paper-texture border border-[#CCA17F]/60 rounded-2xl p-6 sm:p-8 shadow-lg text-center reveal-item">
+      <p class="text-xs uppercase tracking-[0.25em] text-[#9A7456] font-displayCard font-bold">Counting Down To The Blessed Evening</p>
+      <h3 class="font-script text-3xl sm:text-4xl text-espresso mt-1">Sunday, 17th January 2027 at 08:00 PM</h3>
+
+      <!-- Countdown Grid -->
+      <div id="countdown-grid" class="grid grid-cols-4 gap-2.5 sm:gap-5 max-w-lg mx-auto my-6">
+        <div class="bg-[#FAF8F3] border border-[#CCA17F] rounded-xl py-3 px-2 shadow-sm">
+          <span id="cd-days" class="block font-displayCard font-bold text-2xl sm:text-4xl text-espresso">00</span>
+          <span class="text-[11px] sm:text-xs uppercase tracking-widest text-[#8C6D53] font-semibold">Days</span>
+        </div>
+        <div class="bg-[#FAF8F3] border border-[#CCA17F] rounded-xl py-3 px-2 shadow-sm">
+          <span id="cd-hours" class="block font-displayCard font-bold text-2xl sm:text-4xl text-espresso">00</span>
+          <span class="text-[11px] sm:text-xs uppercase tracking-widest text-[#8C6D53] font-semibold">Hours</span>
+        </div>
+        <div class="bg-[#FAF8F3] border border-[#CCA17F] rounded-xl py-3 px-2 shadow-sm">
+          <span id="cd-mins" class="block font-displayCard font-bold text-2xl sm:text-4xl text-espresso">00</span>
+          <span class="text-[11px] sm:text-xs uppercase tracking-widest text-[#8C6D53] font-semibold">Minutes</span>
+        </div>
+        <div class="bg-[#FAF8F3] border border-[#CCA17F] rounded-xl py-3 px-2 shadow-sm">
+          <span id="cd-secs" class="block font-displayCard font-bold text-2xl sm:text-4xl text-[#B07D56]">00</span>
+          <span class="text-[11px] sm:text-xs uppercase tracking-widest text-[#8C6D53] font-semibold">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Quick Venue Map & Calendar Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+        <a href="https://www.google.com/maps/search/?api=1&query=Saifee+Mohallah+Mawaid+Indore"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#CCA17F] bg-[#FAF8F3] hover:bg-[#CCA17F] hover:text-white text-espresso transition text-xs sm:text-sm font-displayCard font-semibold tracking-wider uppercase shadow-sm">
+          <i class="fa-solid fa-location-dot text-[#B07D56] group-hover:text-white"></i>
+          <span>Saifee Mohallah Mawaid, Indore (Map)</span>
+        </a>
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Shakurwala+Wedding+-+Murtaza+%26+Rukaiya+%7C+Jamila+%26+Abbas&dates=20270117T143000Z/20270117T173000Z&details=Wedding+Mawaid+of+Murtaza+weds+Rukaiya+%26+Jamila+weds+Abbas+hosted+by+Shakurwala+Family&location=Saifee+Mohallah+Mawaid+Indore"
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#CCA17F] bg-[#FAF8F3] hover:bg-[#CCA17F] hover:text-white text-espresso transition text-xs sm:text-sm font-displayCard font-semibold tracking-wider uppercase shadow-sm">
+          <i class="fa-regular fa-calendar-plus text-[#6B8E6E]"></i>
+          <span>Save Date to Calendar</span>
+        </a>
+       
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 4. DYNAMIC RSVP FORM SECTION                                        -->
+    <!-- Strictly NO Invitees, NO City, NO Number of Children, Optional Email-->
+    <!-- =================================================================== -->
+    <section id="rsvp-section" class="w-full max-w-[820px] mt-8 paper-texture border-2 border-[#CCA17F] rounded-2xl p-6 sm:p-10 md:p-12 shadow-xl relative overflow-hidden reveal-item">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <p class="text-xs uppercase tracking-[0.25em] text-[#9A7456] font-displayCard font-bold">Kindly Respond</p>
+        <h2 class="font-script text-4xl sm:text-5xl text-espresso mt-1">R.S.V.P.</h2>
+        <div class="flex items-center justify-center gap-2 max-w-[220px] mx-auto mt-1 mb-3">
+          <div class="h-[1.5px] flex-1 bg-gradient-to-r from-transparent to-[#CCA17F]"></div>
+          <span class="text-[#CCA17F] text-sm">✦</span>
+          <div class="h-[1.5px] flex-1 bg-gradient-to-l from-transparent to-[#CCA17F]"></div>
+        </div>
+        <p class="font-serifCard italic text-base sm:text-lg text-stone-700">
+          We would be honoured by your presence and Mubarakbad. Kindly confirm your attendance below.
+        </p>
+      </div>
+
+      <!-- RSVP Form -->
+      <form id="rsvp-form" class="space-y-5 max-w-xl mx-auto" novalidate>
+
+        <!-- 1. Full Name (Required) -->
+        <div>
+          <label for="rsvp-name" class="block font-displayCard font-bold text-sm sm:text-base text-espresso mb-1.5">
+            Full Name <span class="text-red-600">*</span>
+          </label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-[#9A7456]">
+              <i class="fa-regular fa-user"></i>
+            </span>
+            <input type="text" id="rsvp-name" name="fullName" required
+              placeholder="Enter your full name (e.g., Shk. Khuzaima Bhai)"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/90 border border-[#CCA17F]/70 focus:border-[#B07D56] focus:ring-2 focus:ring-[#CCA17F]/30 outline-none text-espresso font-serifCard text-base sm:text-lg transition" />
+          </div>
+          <p id="err-name" class="hidden text-xs text-red-600 mt-1 font-sans">Please enter your full name.</p>
+        </div>
+
+        <!-- 2. Phone / WhatsApp Number (Required) -->
+        <div>
+          <label for="rsvp-phone" class="block font-displayCard font-bold text-sm sm:text-base text-espresso mb-1.5">
+            Phone / WhatsApp Number <span class="text-red-600">*</span>
+          </label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-[#9A7456]">
+              <i class="fa-brands fa-whatsapp"></i>
+            </span>
+            <input type="tel" id="rsvp-phone" name="phone" required
+              placeholder="Enter your mobile number"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/90 border border-[#CCA17F]/70 focus:border-[#B07D56] focus:ring-2 focus:ring-[#CCA17F]/30 outline-none text-espresso font-serifCard text-base sm:text-lg transition" />
+          </div>
+          <p id="err-phone" class="hidden text-xs text-red-600 mt-1 font-sans">Please enter a valid contact number.</p>
+        </div>
+
+        <!-- 3. Email Address (Strictly NOT Mandatory / Optional) -->
+        <div>
+          <label for="rsvp-email" class="block font-displayCard font-bold text-sm sm:text-base text-espresso mb-1.5">
+            Email Address <span class="text-xs font-normal italic text-stone-500">(Optional)</span>
+          </label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-[#9A7456]">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+            <input type="email" id="rsvp-email" name="email"
+              placeholder="yourname@example.com (Optional)"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/90 border border-[#CCA17F]/70 focus:border-[#B07D56] focus:ring-2 focus:ring-[#CCA17F]/30 outline-none text-espresso font-serifCard text-base sm:text-lg transition" />
+          </div>
+        </div>
+
+        <!-- 4. Will You Attend? (Required) -->
+        <div>
+          <label class="block font-displayCard font-bold text-sm sm:text-base text-espresso mb-2">
+            Will You Attend? <span class="text-red-600">*</span>
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <label class="relative flex items-center gap-3 p-3.5 rounded-xl border border-[#CCA17F] bg-white/90 cursor-pointer hover:bg-[#FAF8F3] transition">
+              <input type="radio" name="attendance" value="Joyfully Attending" checked
+                class="w-4 h-4 accent-[#6B8E6E]" />
+              <div>
+                <span class="block font-displayCard font-bold text-espresso text-sm sm:text-base">Joyfully Attending</span>
+                <span class="block text-xs text-stone-500 italic">Inshallah, will grace the occasion</span>
+              </div>
+            </label>
+
+            <label class="relative flex items-center gap-3 p-3.5 rounded-xl border border-[#CCA17F] bg-white/90 cursor-pointer hover:bg-[#FAF8F3] transition">
+              <input type="radio" name="attendance" value="Regretfully Unable to Attend"
+                class="w-4 h-4 accent-[#B07D56]" />
+              <div>
+                <span class="block font-displayCard font-bold text-espresso text-sm sm:text-base">Unable to Attend</span>
+                <span class="block text-xs text-stone-500 italic">Sending heartfelt Duas &amp; wishes</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- 5. Number of Guests (Shown when Attending - Strictly NO children field & NO city field) -->
+        <div id="guests-count-wrapper" class="transition-all duration-300">
+          <label for="rsvp-guests" class="block font-displayCard font-bold text-sm sm:text-base text-espresso mb-1.5">
+            Number of Guests Attending <span class="text-red-600">*</span>
+          </label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-[#9A7456]">
+              <i class="fa-solid fa-users"></i>
+            </span>
+            <select id="rsvp-guests" name="guests"
+              class="w-full pl-10 pr-4 py-3 rounded-xl bg-white/90 border border-[#CCA17F]/70 focus:border-[#B07D56] focus:ring-2 focus:ring-[#CCA17F]/30 outline-none text-espresso font-serifCard text-base sm:text-lg transition">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7">7 Guests</option>
+              <option value="8">8 Guests</option>
+              <option value="9">9 Guests</option>
+              <option value="10">10 Guests</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 6. Wishes / Dua for the Couples (Optional) -->
+        <div>
+          <label for="rsvp-wishes" class="block font-displayCard font-bold text-sm sm:text-base text-espresso mb-1.5">
+            Dua &amp; Wishes for Murtaza &amp; Rukaiya and Jamila &amp; Abbas <span class="text-xs font-normal italic text-stone-500">(Optional)</span>
+          </label>
+          <textarea id="rsvp-wishes" name="wishes" rows="3"
+            placeholder="Share your Mubarakbad and heartfelt wishes for the couples..."
+            class="w-full p-3.5 rounded-xl bg-white/90 border border-[#CCA17F]/70 focus:border-[#B07D56] focus:ring-2 focus:ring-[#CCA17F]/30 outline-none text-espresso font-serifCard text-base sm:text-lg transition"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-2 text-center">
+          <button id="rsvp-submit-btn" type="submit"
+            class="w-full sm:w-auto min-w-[260px] btn-rosegold text-white font-displayCard font-bold uppercase tracking-widest text-xs sm:text-sm px-10 py-4 rounded-full shadow-lg inline-flex items-center justify-center gap-2.5 cursor-pointer">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Submit RSVP Response</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Celebratory Confirmation Card (Shown after submitting RSVP) -->
+      <div id="rsvp-success-box" class="hidden max-w-lg mx-auto my-4 p-6 sm:p-8 rounded-2xl bg-white/95 border-2 border-[#6B8E6E] text-center shadow-md">
+        <div class="w-16 h-16 mx-auto rounded-full bg-[#6B8E6E]/15 text-[#49654C] flex items-center justify-center text-3xl mb-3">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h3 class="font-script text-4xl text-espresso">Shukran!</h3>
+        <p class="font-displayCard font-bold text-lg text-espresso mt-1">Your RSVP Has Been Recorded</p>
+        <p id="rsvp-success-detail" class="font-serifCard italic text-base text-stone-600 mt-2">
+          We look forward to welcoming you at Saifee Mohallah Mawaid, Indore on Sunday, 17th January 2027 @ 08:00 PM.
+        </p>
+        <button id="rsvp-another-btn" type="button"
+          class="mt-5 px-6 py-2 rounded-full border border-[#CCA17F] text-xs font-displayCard font-bold uppercase tracking-wider text-espresso hover:bg-[#CCA17F] hover:text-white transition">
+          Submit Another Response
+        </button>
+      </div>
+
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- 5. FOOTER & DISCREET ADMIN LOCK BUTTON (Password: "786110")         -->
+    <!-- =================================================================== -->
+    <footer class="w-full max-w-[820px] mt-10 mb-8 text-center space-y-3">
+      <p class="font-serifCard italic text-stone-600 text-sm sm:text-base">
+        Shakur Wala Family, Relatives &amp; Friends &bull; Indore
+      </p>
+      <div>
+        <button id="open-admin-btn" type="button"
+          class="inline-flex items-center gap-1.5 text-xs font-sans text-stone-500 hover:text-espresso px-3.5 py-1.5 rounded-full border border-stone-300/80 bg-white/60 hover:bg-white transition cursor-pointer">
+          <i class="fa-solid fa-lock text-[#B07D56]"></i>
+          <span>Admin Access</span>
+        </button>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- 6. ADMIN PASSWORD MODAL (Password Strictly "786110")                  -->
+  <!-- ===================================================================== -->
+  <div id="admin-login-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4">
+    <div id="admin-login-card" class="bg-[#FAF8F3] border-2 border-[#CCA17F] rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
+      <button id="close-admin-login-btn" type="button" class="absolute top-4 right-4 text-stone-400 hover:text-espresso text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full bg-[#CCA17F]/20 text-[#B07D56] flex items-center justify-center text-2xl mb-3">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <h3 class="font-displayCard font-bold text-xl text-espresso">Admin RSVP Portal</h3>
+        <p class="text-xs font-sans text-stone-500 mt-1">
+          Responses are private and viewable only by the family administrator.
+        </p>
+      </div>
+
+      <form id="admin-login-form" class="mt-5 space-y-4">
+        <div>
+          <label for="admin-password-input" class="block text-xs font-sans font-semibold uppercase tracking-wider text-stone-600 mb-1.5">
+            Enter Admin Password
+          </label>
+          <input type="password" id="admin-password-input" required placeholder="Enter password..."
+            class="w-full px-4 py-3 rounded-xl bg-white border border-[#CCA17F] focus:border-[#B07D56] outline-none font-sans text-center tracking-widest text-lg" />
+          <p id="admin-login-error" class="hidden text-xs text-red-600 font-sans text-center mt-1.5">
+            <i class="fa-solid fa-circle-exclamation mr-1"></i> Incorrect admin password. Access denied.
+          </p>
+        </div>
+
+        <button type="submit"
+          class="w-full btn-rosegold text-white font-displayCard font-bold uppercase tracking-wider text-xs sm:text-sm py-3.5 rounded-xl shadow-md cursor-pointer">
+          Unlock RSVP Responses
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 7. FULL ADMIN DASHBOARD & GOOGLE SHEET SYNC MODAL                     -->
+  <!-- ===================================================================== -->
+  <div id="admin-dashboard-modal" class="fixed inset-0 z-50 hidden bg-black/70 backdrop-blur-sm overflow-y-auto p-2 sm:p-6">
+    <div class="max-w-6xl mx-auto my-4 bg-[#FAF8F3] border-2 border-[#CCA17F] rounded-2xl shadow-2xl overflow-hidden font-sans">
+
+      <!-- Admin Top Bar -->
+      <div class="bg-[#1A1715] text-white px-5 sm:px-8 py-4 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-3">
+          <span class="w-10 h-10 rounded-full bg-[#CCA17F]/25 text-[#CCA17F] flex items-center justify-center relative">
+            <i class="fa-solid fa-satellite-dish"></i>
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping absolute -top-0.5 -right-0.5"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 absolute -top-0.5 -right-0.5"></span>
+          </span>
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <h2 class="font-displayCard font-bold text-lg sm:text-xl text-[#FAF8F3]">
+                Shakurwala Wedding — Real-Time Admin Portal
+              </h2>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-widest bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                LIVE STREAMING
+              </span>
+            </div>
+            <p id="realtime-ticker-text" class="text-xs text-stone-400 mt-0.5">
+              Real-Time Sync Active &bull; Listening for incoming RSVPs across Cloud, Cross-Tab &amp; Google Sheets...
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <!-- Sound Notification Toggle for Live Incoming RSVPs -->
+          <button id="toggle-live-sound-btn" type="button"
+            class="px-3 py-2 rounded-lg bg-stone-800 hover:bg-stone-700 text-emerald-300 text-xs font-semibold flex items-center gap-1.5 border border-stone-700 transition cursor-pointer"
+            title="Play chime whenever a new RSVP arrives in real time">
+            <i id="live-sound-icon" class="fa-solid fa-volume-high"></i>
+            <span id="live-sound-label" class="hidden sm:inline">Live Chime: ON</span>
+          </button>
+
+          <!-- In-Portal Live Sync Test / Quick Add RSVP Button -->
+          <button id="toggle-live-test-drawer-btn" type="button"
+            class="px-3.5 py-2 rounded-lg bg-[#CCA17F] hover:bg-[#B07D56] text-[#1A1715] font-bold text-xs flex items-center gap-1.5 transition cursor-pointer">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Live Test / Add RSVP</span>
+          </button>
+
+          <!-- Export CSV -->
+          <button id="export-csv-btn" type="button"
+            class="px-3.5 py-2 rounded-lg bg-[#6B8E6E] hover:bg-[#57775A] text-white text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer">
+            <i class="fa-solid fa-file-csv"></i>
+            <span>Export Sheet (.CSV)</span>
+          </button>
+
+          <!-- Lock & Close -->
+          <button id="close-admin-dashboard-btn" type="button"
+            class="px-3.5 py-2 rounded-lg bg-stone-800 hover:bg-stone-700 text-stone-200 text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer">
+            <i class="fa-solid fa-lock"></i>
+            <span>Lock</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-Time Sync Channel Status Strip -->
+      <div class="bg-[#231F1C] border-b border-stone-800 px-5 sm:px-8 py-2 flex flex-wrap items-center justify-between gap-2 text-[11px] text-stone-300">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="inline-flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <strong class="text-white">Google Sites URL:</strong>
+            <a href="https://sites.google.com/view/shakurwala-wedding-invitation-/shakurwala-wedding-rsvp" target="_blank" rel="noopener noreferrer"
+               class="text-[#CCA17F] hover:underline truncate max-w-[230px] sm:max-w-xs">
+              sites.google.com/view/shakurwala-wedding-invitation-/shakurwala-wedding-rsvp
+            </a>
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <span id="status-dot-cloud" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <strong class="text-white">Cloud Stream:</strong>
+            <span id="status-text-cloud" class="text-emerald-300">Connected</span>
+          </span>
+          <span class="inline-flex items-center gap-1.5">
+            <span id="status-dot-sheet" class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <strong class="text-white">Google Sheet Live Polling (3s):</strong>
+            <span id="status-text-sheet" class="text-amber-300">Awaiting Webhook URL</span>
+          </span>
+        </div>
+        <div class="text-stone-400">
+          Last Sync Event: <span id="last-sync-timestamp" class="text-[#CCA17F] font-semibold">Just now</span>
+        </div>
+      </div>
+
+      <!-- Admin Content Body -->
+      <div class="p-4 sm:p-8 space-y-6">
+
+        <!-- Collapsible Instant Live Sync Tester / Quick Admin Entry Drawer -->
+        <div id="live-test-drawer" class="hidden bg-gradient-to-r from-[#FAF8F3] via-white to-[#FAF8F3] border-2 border-[#CCA17F] rounded-xl p-4 sm:p-5 shadow-md">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <span class="w-7 h-7 rounded-full bg-[#CCA17F]/25 text-[#B07D56] flex items-center justify-center text-xs">
+                <i class="fa-solid fa-bolt"></i>
+              </span>
+              <div>
+                <h4 class="font-bold text-sm text-espresso">Instant Real-Time Sync Tester &amp; Quick Guest Entry</h4>
+                <p class="text-xs text-stone-500">Submit a response right here (or from another browser tab/device) and watch it stream into the table &amp; Google Sheet instantaneously.</p>
+              </div>
+            </div>
+            <button id="close-live-test-drawer-btn" type="button" class="text-stone-400 hover:text-espresso text-sm">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <form id="admin-quick-rsvp-form" class="grid grid-cols-1 sm:grid-cols-6 gap-2.5 items-end">
+            <div class="sm:col-span-1">
+              <label class="block text-[11px] font-semibold text-stone-600 mb-1">Full Name *</label>
+              <input type="text" id="quick-name" required placeholder="e.g. Murtaza Bhai"
+                class="w-full px-3 py-2 rounded-lg border border-stone-300 text-xs outline-none focus:border-[#B07D56]" />
+            </div>
+            <div class="sm:col-span-1">
+              <label class="block text-[11px] font-semibold text-stone-600 mb-1">Phone *</label>
+              <input type="tel" id="quick-phone" required placeholder="9876543210"
+                class="w-full px-3 py-2 rounded-lg border border-stone-300 text-xs outline-none focus:border-[#B07D56]" />
+            </div>
+            <div class="sm:col-span-1">
+              <label class="block text-[11px] font-semibold text-stone-600 mb-1">Email (Optional)</label>
+              <input type="email" id="quick-email" placeholder="Optional"
+                class="w-full px-3 py-2 rounded-lg border border-stone-300 text-xs outline-none focus:border-[#B07D56]" />
+            </div>
+            <div class="sm:col-span-1">
+              <label class="block text-[11px] font-semibold text-stone-600 mb-1">Attendance *</label>
+              <select id="quick-attendance" class="w-full px-2.5 py-2 rounded-lg border border-stone-300 text-xs outline-none focus:border-[#B07D56]">
+                <option value="Joyfully Attending">Joyfully Attending</option>
+                <option value="Regretfully Unable to Attend">Unable to Attend</option>
+              </select>
+            </div>
+            <div class="sm:col-span-1">
+              <label class="block text-[11px] font-semibold text-stone-600 mb-1">Guests *</label>
+              <input type="number" id="quick-guests" min="1" max="20" value="2"
+                class="w-full px-3 py-2 rounded-lg border border-stone-300 text-xs outline-none focus:border-[#B07D56]" />
+            </div>
+            <div class="sm:col-span-1">
+              <button type="submit"
+                class="w-full py-2 px-3 rounded-lg btn-rosegold text-white font-bold text-xs shadow flex items-center justify-center gap-1.5 cursor-pointer">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Stream Live</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- KPI Summary Cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+          <div class="bg-white p-4 rounded-xl border border-[#CCA17F]/50 shadow-sm transition-all">
+            <div class="flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider text-stone-500 font-semibold">Total RSVPs</span>
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" title="Updates in real time"></span>
+            </div>
+            <p id="kpi-total-rsvps" class="text-2xl sm:text-3xl font-bold text-espresso mt-1">0</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-[#6B8E6E]/60 shadow-sm transition-all">
+            <div class="flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider text-[#49654C] font-semibold">Total Guests Attending</span>
+              <i class="fa-solid fa-users text-[#6B8E6E] text-xs"></i>
+            </div>
+            <p id="kpi-total-guests" class="text-2xl sm:text-3xl font-bold text-[#49654C] mt-1">0</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-[#CCA17F]/50 shadow-sm transition-all">
+            <div class="flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider text-stone-500 font-semibold">Confirmed Attending</span>
+              <i class="fa-solid fa-circle-check text-emerald-600 text-xs"></i>
+            </div>
+            <p id="kpi-attending-count" class="text-2xl sm:text-3xl font-bold text-espresso mt-1">0</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-[#CCA17F]/50 shadow-sm transition-all">
+            <div class="flex items-center justify-between">
+              <span class="text-xs uppercase tracking-wider text-stone-500 font-semibold">Unable to Attend</span>
+              <i class="fa-regular fa-envelope text-amber-600 text-xs"></i>
+            </div>
+            <p id="kpi-declined-count" class="text-2xl sm:text-3xl font-bold text-stone-600 mt-1">0</p>
+          </div>
+        </div>
+
+        <!-- Google Sheets Two-Way Live Webhook Configuration Box -->
+        <div class="bg-white rounded-xl border-2 border-[#CCA17F] p-4 sm:p-6 shadow-sm space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-file-excel text-2xl text-[#1D6F42]"></i>
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h3 class="font-bold text-sm sm:text-base text-espresso">
+                    Google Sites &harr; Google Sheets Live Real-Time Bridge
+                  </h3>
+                  <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-bold uppercase tracking-wider">
+                    Auto-Polls Every 3s
+                  </span>
+                </div>
+                <p class="text-xs text-stone-500">
+                  Connects <strong>sites.google.com/view/shakurwala-wedding-invitation-/shakurwala-wedding-rsvp</strong> directly to your Google Sheet for instant 2-way updates across all devices.
+                </p>
+              </div>
+            </div>
+            <button id="toggle-script-guide-btn" type="button"
+              class="px-3 py-1.5 rounded-lg bg-[#FAF8F3] border border-[#CCA17F] text-xs font-bold text-[#B07D56] hover:bg-[#CCA17F] hover:text-white transition flex items-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-code"></i>
+              <span>Step 1: Get Google Sheet Script Code</span>
+            </button>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-2.5">
+            <input type="url" id="google-sheet-url-input"
+              placeholder="Paste your Google Apps Script Web App URL here (https://script.google.com/macros/s/.../exec)"
+              class="flex-1 px-3.5 py-2.5 rounded-lg border border-stone-300 text-xs sm:text-sm focus:border-[#B07D56] outline-none" />
+            <button id="save-sheet-url-btn" type="button"
+              class="px-4 py-2.5 rounded-lg bg-[#1A1715] hover:bg-stone-800 text-white text-xs font-semibold whitespace-nowrap cursor-pointer">
+              Save &amp; Connect Live
+            </button>
+            <button id="pull-from-sheet-btn" type="button"
+              class="px-4 py-2.5 rounded-lg bg-stone-100 hover:bg-stone-200 text-espresso border border-stone-300 text-xs font-semibold whitespace-nowrap flex items-center justify-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-cloud-arrow-down text-[#1D6F42]"></i>
+              <span>Pull Now</span>
+            </button>
+            <button id="sync-all-sheet-btn" type="button"
+              class="px-4 py-2.5 rounded-lg bg-[#1D6F42] hover:bg-[#165934] text-white text-xs font-semibold whitespace-nowrap flex items-center justify-center gap-1.5 cursor-pointer">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>Push All</span>
+            </button>
+          </div>
+
+          <!-- Google Sites Permanent Embed Exporter (Critical for Google Sites Sandboxed Iframes) -->
+          <div class="bg-[#FAF8F3] border border-[#CCA17F]/70 rounded-xl p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <div class="text-xs text-stone-700">
+              <strong class="text-espresso"><i class="fa-brands fa-google mr-1 text-[#B07D56]"></i>Hosting on Google Sites?</strong>
+              After pasting your Google Sheet Web App URL above, click <strong>"Copy HTML for Google Sites"</strong> and paste it into your Google Sites <em>Embed &rarr; Embed Code</em> block so every guest on any phone automatically syncs to your Sheet!
+            </div>
+            <button id="copy-google-sites-html-btn" type="button"
+              class="px-4 py-2.5 rounded-lg btn-rosegold text-white text-xs font-bold whitespace-nowrap flex items-center gap-1.5 shadow-sm cursor-pointer shrink-0">
+              <i class="fa-solid fa-file-code"></i>
+              <span>Copy HTML for Google Sites</span>
+            </button>
+          </div>
+
+          <!-- Collapsible Google Apps Script Code Drawer (Upgraded with CORS/Iframe-Safe GET + POST + JSONP + Delete) -->
+          <div id="script-guide-drawer" class="hidden bg-stone-50 border border-stone-200 rounded-xl p-4 text-xs space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="font-bold text-stone-800">
+                 Connect <code>sites.google.com/view/shakurwala-wedding-invitation-/shakurwala-wedding-rsvp</code> to Google Sheets:
+              </span>
+              <button id="copy-apps-script-btn" type="button"
+                class="px-3 py-1.5 rounded bg-[#CCA17F] text-white font-semibold hover:bg-[#B07D56] transition cursor-pointer">
+                <i class="fa-regular fa-copy mr-1"></i> Copy Google Sites-Ready Apps Script
+              </button>
+            </div>
+            <ol class="list-decimal list-inside space-y-1.5 text-stone-600">
+              <li>Open your <strong>Google Sheet</strong> and click <strong>Extensions &rarr; Apps Script</strong>.</li>
+              <li>Replace everything in <code>Code.gs</code> with the script below and click <strong>Save</strong> (<i class="fa-regular fa-floppy-disk"></i>).</li>
+              <li>Click <strong>Deploy &rarr; New deployment</strong> (or <strong>Manage deployments &rarr; Edit &rarr; New version</strong>).</li>
+              <li>Set <strong>Execute as: Me</strong> and <strong>Who has access: Anyone</strong>, then click <strong>Deploy</strong>.</li>
+              <li>Paste the generated <code>https://script.google.com/macros/s/.../exec</code> URL in the input box above and click <strong>Save &amp; Connect Live</strong>.</li>
+              <li>Finally, click <strong>"Copy HTML for Google Sites"</strong> above and update your embed block on <code>sites.google.com/view/shakurwala-wedding-invitation-/shakurwala-wedding-rsvp</code>.</li>
+            </ol>
+            <pre id="apps-script-code" class="bg-[#1A1715] text-emerald-300 p-3 rounded-lg overflow-x-auto text-[11px] leading-relaxed">function ensureHeaders_(sheet) {
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(["ID", "Timestamp", "Full Name", "Phone Number", "Email (Optional)", "Attendance", "Number of Guests", "Wishes", "CreatedAtMs"]);
+  }
+}
+
+function insertRow_(sheet, data) {
+  ensureHeaders_(sheet);
+  var id = String(data.id || ("row_" + new Date().getTime()));
+  // Avoid duplicate IDs
+  var values = sheet.getDataRange().getValues();
+  for (var i = 1; i &lt; values.length; i++) {
+    if (String(values[i][0]) === id) {
+      return { status: "duplicate", id: id };
+    }
+  }
+  sheet.appendRow([
+    id,
+    data.timestamp || new Date().toLocaleString(),
+    data.fullName || "",
+    data.phone || "",
+    data.email || "—",
+    data.attendance || "Joyfully Attending",
+    Number(data.guests || 0),
+    data.wishes || "",
+    Number(data.createdAtMs || new Date().getTime())
+  ]);
+  return { status: "success", id: id };
+}
+
+function deleteRowById_(sheet, targetId) {
+  var values = sheet.getDataRange().getValues();
+  for (var i = values.length - 1; i &gt;= 1; i--) {
+    if (String(values[i][0]) === String(targetId)) {
+      sheet.deleteRow(i + 1);
+      return { status: "deleted", id: targetId };
+    }
+  }
+  return { status: "not_found", id: targetId };
+}
+
+function doPost(e) {
+  var lock = LockService.getScriptLock();
+  lock.tryLock(10000);
+  try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+    var res = (data.action === "delete" &amp;&amp; data.id)
+      ? deleteRowById_(sheet, data.id)
+      : insertRow_(sheet, data);
+    return ContentService.createTextOutput(JSON.stringify(res))
+      .setMimeType(ContentService.MimeType.JSON);
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function doGet(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  ensureHeaders_(sheet);
+  var params = (e &amp;&amp; e.parameter) ? e.parameter : {};
+
+  // Support GET-based insert/delete for strict Google Sites mobile iframes
+  if (params.action === "insert" &amp;&amp; params.payload) {
+    var payloadObj = JSON.parse(params.payload);
+    var writeRes = insertRow_(sheet, payloadObj);
+    return outputJsonOrJsonp_(writeRes, params.callback);
+  }
+  if (params.action === "delete" &amp;&amp; params.id) {
+    var delRes = deleteRowById_(sheet, params.id);
+    return outputJsonOrJsonp_(delRes, params.callback);
+  }
+
+  var rows = sheet.getDataRange().getValues();
+  var result = [];
+  for (var i = 1; i &lt; rows.length; i++) {
+    var r = rows[i];
+    if (!r[2]) continue;
+    result.push({
+      id: String(r[0] || ("sheet_" + i)),
+      timestamp: String(r[1] || ""),
+      fullName: String(r[2] || ""),
+      phone: String(r[3] || ""),
+      email: String(r[4] === "—" ? "" : (r[4] || "")),
+      attendance: String(r[5] || "Joyfully Attending"),
+      guests: Number(r[6] || 0),
+      wishes: String(r[7] || ""),
+      createdAtMs: Number(r[8] || (new Date().getTime() - (rows.length - i) * 1000))
+    });
+  }
+  return outputJsonOrJsonp_({ status: "ok", items: result }, params.callback);
+}
+
+function outputJsonOrJsonp_(obj, callback) {
+  var json = JSON.stringify(obj);
+  if (callback) {
+    return ContentService.createTextOutput(callback + "(" + json + ");")
+      .setMimeType(ContentService.MimeType.JAVASCRIPT);
+  }
+  return ContentService.createTextOutput(json)
+    .setMimeType(ContentService.MimeType.JSON);
+}</pre>
+          </div>
+        </div>
+
+        <!-- Search & Filter Controls -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+          <div class="relative flex-1">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+            <input type="text" id="admin-search-input"
+              placeholder="Search guest by name, phone, email, or wishes..."
+              class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-white border border-stone-300 text-xs sm:text-sm outline-none focus:border-[#B07D56]" />
+          </div>
+          <select id="admin-filter-select"
+            class="px-3.5 py-2.5 rounded-xl bg-white border border-stone-300 text-xs sm:text-sm outline-none focus:border-[#B07D56]">
+            <option value="ALL">All Responses</option>
+            <option value="Joyfully Attending">Joyfully Attending Only</option>
+            <option value="Regretfully Unable to Attend">Unable to Attend Only</option>
+          </select>
+        </div>
+
+        <!-- Responses Table -->
+        <div class="bg-white rounded-xl border border-stone-200 shadow-sm overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-stone-100 text-stone-700 border-b border-stone-200 uppercase text-[11px] tracking-wider">
+                <th class="py-3.5 px-4">Date &amp; Time</th>
+                <th class="py-3.5 px-4">Full Name</th>
+                <th class="py-3.5 px-4">Phone / WhatsApp</th>
+                <th class="py-3.5 px-4">Email (Optional)</th>
+                <th class="py-3.5 px-4">Attendance</th>
+                <th class="py-3.5 px-4 text-center">Guests</th>
+                <th class="py-3.5 px-4">Dua / Wishes</th>
+                <th class="py-3.5 px-4 text-center">Sync Status</th>
+                <th class="py-3.5 px-4 text-right">Action</th>
+              </tr>
+            </thead>
+            <tbody id="admin-rsvp-tbody" class="divide-y divide-stone-200">
+              <!-- Populated dynamically via JS in real time -->
+            </tbody>
+          </table>
+          <div id="admin-empty-state" class="hidden py-12 text-center text-stone-400 text-sm">
+            <i class="fa-regular fa-folder-open text-2xl mb-2 block"></i>
+            No RSVP responses recorded yet. Click <strong>"Live Test / Add RSVP"</strong> above or submit the form on the page to watch responses stream in live!
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Toast Notification -->
+  <div id="toast-notification"
+    class="fixed top-5 right-5 z-[60] hidden items-center gap-2.5 px-5 py-3.5 rounded-xl bg-[#1A1715] text-white text-xs sm:text-sm shadow-2xl border border-[#CCA17F]">
+    <i id="toast-icon" class="fa-solid fa-circle-check text-[#6B8E6E]"></i>
+    <span id="toast-text">Action completed</span>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 8. APPLICATION LOGIC, FIREBASE CLOUD SYNC & GOOGLE SHEETS INTEGRATION -->
+  <!-- ===================================================================== -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+    import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    import {
+      getFirestore,
+      collection,
+      doc,
+      addDoc,
+      setDoc,
+      deleteDoc,
+      onSnapshot
+    } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+    // Strictly enforced admin password
+    const ADMIN_PASSWORD = "786110";
+
+    // Canonical Google Sites URL for this Wedding Invitation
+    const LIVE_GOOGLE_SITES_URL = "https://sites.google.com/view/shakurwala-wedding-invitation-/shakurwala-wedding-rsvp";
+
+    // Default Baked-In Google Sheet Web App URL (Automatically populated when clicking "Copy HTML for Google Sites")
+    const DEFAULT_GOOGLE_SHEET_WEB_APP_URL = "";
+
+    // Real-Time State & Multi-Channel Sync Trackers
+    let rsvpList = [];
+    let knownRsvpIds = new Set();
+    let newlyArrivedIds = new Set();
+    let deletedRsvpIds = new Set();
+    let initialLoadCompleted = false;
+    let liveSoundEnabled = true;
+    // Also allow passing ?sheetUrl=... in the iframe URL or using DEFAULT_GOOGLE_SHEET_WEB_APP_URL
+    const urlParams = new URLSearchParams(window.location.search);
+    let googleSheetWebhookUrl = (urlParams.get("sheetUrl") || DEFAULT_GOOGLE_SHEET_WEB_APP_URL || "").trim();
+    let db = null;
+    let auth = null;
+    let currentUser = null;
+    const appId = typeof __app_id !== "undefined" ? __app_id : "shakurwala-wedding-rsvp";
+
+    // Instant Cross-Tab Real-Time BroadcastChannel (0ms sync between tabs/windows)
+    const liveChannel = typeof BroadcastChannel !== "undefined"
+      ? new BroadcastChannel("shakurwala_wedding_rsvp_live_sync")
+      : null;
+
+    if (liveChannel) {
+      liveChannel.onmessage = (event) => {
+        const msg = event.data;
+        if (!msg || !msg.type) return;
+
+        if (msg.type === "NEW_RSVP" && msg.entry) {
+          const exists = rsvpList.some(
+            (r) => r.id === msg.entry.id || (r.createdAtMs === msg.entry.createdAtMs && r.fullName === msg.entry.fullName)
+          );
+          if (!exists) {
+            newlyArrivedIds.add(msg.entry.id);
+            rsvpList.unshift(msg.entry);
+            onRealtimeEventReceived(`New RSVP from ${msg.entry.fullName} streamed via Live Sync`);
+            renderAdminDashboard();
+          }
+        } else if (msg.type === "DELETE_RSVP" && msg.id) {
+          rsvpList = rsvpList.filter((r) => r.id !== msg.id);
+          updateLiveSyncTimestamp("Entry deleted in real time");
+          renderAdminDashboard();
+        } else if (msg.type === "WEBHOOK_UPDATED") {
+          googleSheetWebhookUrl = msg.webhookUrl || "";
+          const urlInput = document.getElementById("google-sheet-url-input");
+          if (urlInput) urlInput.value = googleSheetWebhookUrl;
+          updateSheetConnectionBadge();
+        }
+      };
+    }
+
+    function updateLiveSyncTimestamp(statusNote) {
+      const nowStr = new Date().toLocaleTimeString("en-IN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      });
+      const tsEl = document.getElementById("last-sync-timestamp");
+      if (tsEl) tsEl.textContent = nowStr;
+      if (statusNote) {
+        const ticker = document.getElementById("realtime-ticker-text");
+        if (ticker) {
+          ticker.innerHTML = `<span class="text-emerald-300 font-semibold"><i class="fa-solid fa-bolt mr-1"></i>${escapeHtml(statusNote)}</span> &bull; Synced at ${nowStr}`;
+        }
+      }
+    }
+
+    function updateSheetConnectionBadge() {
+      const dot = document.getElementById("status-dot-sheet");
+      const txt = document.getElementById("status-text-sheet");
+      const urlInput = document.getElementById("google-sheet-url-input");
+      if (urlInput && googleSheetWebhookUrl && document.activeElement !== urlInput) {
+        urlInput.value = googleSheetWebhookUrl;
+      }
+      if (!dot || !txt) return;
+      if (googleSheetWebhookUrl) {
+        dot.className = "w-2 h-2 rounded-full bg-emerald-400 animate-pulse";
+        txt.className = "text-emerald-300";
+        txt.textContent = "Connected (Live 3s Sync)";
+      } else {
+        dot.className = "w-2 h-2 rounded-full bg-amber-400";
+        txt.className = "text-amber-300";
+        txt.textContent = "Ready (Paste Webhook URL Below)";
+      }
+    }
+
+    function onRealtimeEventReceived(message) {
+      updateLiveSyncTimestamp(message);
+      const isAdminOpen = !document.getElementById("admin-dashboard-modal").classList.contains("hidden");
+      if (isAdminOpen) {
+        showToast(message);
+        if (liveSoundEnabled) {
+          playGentleChime();
+        }
+      }
+    }
+
+    // Toast helper (never use alert/confirm)
+    function showToast(message, isError = false) {
+      const toast = document.getElementById("toast-notification");
+      const icon = document.getElementById("toast-icon");
+      const text = document.getElementById("toast-text");
+      text.textContent = message;
+      icon.className = isError
+        ? "fa-solid fa-triangle-exclamation text-red-400"
+        : "fa-solid fa-circle-check text-[#6B8E6E]";
+      toast.classList.remove("hidden");
+      toast.classList.add("flex");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => {
+        toast.classList.add("hidden");
+        toast.classList.remove("flex");
+      }, 3600);
+    }
+
+    // ---------------------------------------------------------------------
+    // A. CLOUD STORAGE & REAL-TIME FIREBASE LISTENER (initCloudStorage)
+    // ---------------------------------------------------------------------
+    async function initCloudStorage() {
+      const dotCloud = document.getElementById("status-dot-cloud");
+      const txtCloud = document.getElementById("status-text-cloud");
+
+      try {
+        if (typeof __firebase_config === "undefined" || !__firebase_config) {
+          if (dotCloud && txtCloud) {
+            dotCloud.className = "w-2 h-2 rounded-full bg-emerald-400";
+            txtCloud.textContent = "Google Sites / Sheet Mode";
+          }
+          initialLoadCompleted = true;
+          return;
+        }
+
+        const firebaseConfig = JSON.parse(__firebase_config);
+        const app = initializeApp(firebaseConfig);
+        auth = getAuth(app);
+        db = getFirestore(app);
+
+        if (typeof __initial_auth_token !== "undefined" && __initial_auth_token) {
+          const cred = await signInWithCustomToken(auth, __initial_auth_token);
+          currentUser = cred.user;
+        } else {
+          const cred = await signInAnonymously(auth);
+          currentUser = cred.user;
+        }
+
+        if (!currentUser) return;
+
+        // 1. Listen to saved Google Sheet Webhook URL in Cloud Settings
+        const settingsDocRef = doc(db, "artifacts", appId, "public", "data", "wedding_settings", "sheet_config");
+        onSnapshot(
+          settingsDocRef,
+          (snap) => {
+            if (snap.exists()) {
+              const data = snap.data();
+              if (data && data.webhookUrl && !googleSheetWebhookUrl) {
+                googleSheetWebhookUrl = data.webhookUrl;
+                updateSheetConnectionBadge();
+                pullFromGoogleSheet(true);
+              }
+            }
+          },
+          (err) => console.warn("Settings listener warning:", err)
+        );
+
+        // 2. Real-Time Listener on Wedding RSVPs Collection
+        const rsvpColRef = collection(db, "artifacts", appId, "public", "data", "wedding_rsvps");
+        onSnapshot(
+          rsvpColRef,
+          (snapshot) => {
+            let newGuestName = "";
+            let newAddedCount = 0;
+
+            snapshot.docChanges().forEach((change) => {
+              const docId = change.doc.id;
+              const docData = change.doc.data();
+
+              if (change.type === "added") {
+                if (deletedRsvpIds.has(docId)) return;
+                const existingIdx = rsvpList.findIndex((r) => r.id === docId);
+                const record = { id: docId, ...docData };
+
+                if (existingIdx === -1) {
+                  rsvpList.push(record);
+                  if (initialLoadCompleted && !knownRsvpIds.has(docId)) {
+                    newlyArrivedIds.add(docId);
+                    newGuestName = docData.fullName || "Guest";
+                    newAddedCount++;
+                  }
+                  knownRsvpIds.add(docId);
+                }
+              } else if (change.type === "modified") {
+                const idx = rsvpList.findIndex((r) => r.id === docId);
+                if (idx !== -1) {
+                  rsvpList[idx] = { id: docId, ...docData };
+                }
+              } else if (change.type === "removed") {
+                rsvpList = rsvpList.filter((r) => r.id !== docId);
+              }
+            });
+
+            rsvpList.sort((a, b) => (b.createdAtMs || 0) - (a.createdAtMs || 0));
+
+            if (initialLoadCompleted && newAddedCount > 0) {
+              onRealtimeEventReceived(`New RSVP from ${newGuestName} received live!`);
+            } else {
+              updateLiveSyncTimestamp("Cloud stream active");
+            }
+
+            initialLoadCompleted = true;
+            renderAdminDashboard();
+          },
+          (err) => {
+            console.warn("RSVP real-time listener error:", err);
+          }
+        );
+      } catch (err) {
+        console.warn("Cloud storage initialization fallback:", err);
+        initialLoadCompleted = true;
+      }
+    }
+
+    // ---------------------------------------------------------------------
+    // B. TWO-WAY REAL-TIME GOOGLE SHEET SYNC (Google Sites Iframe-Compatible)
+    // ---------------------------------------------------------------------
+    function jsonpRequest(url) {
+      return new Promise((resolve, reject) => {
+        const cbName = "__gs_cb_" + Date.now() + "_" + Math.floor(Math.random() * 100000);
+        const script = document.createElement("script");
+        const timer = setTimeout(() => {
+          cleanup();
+          reject(new Error("JSONP timeout"));
+        }, 10000);
+
+        function cleanup() {
+          clearTimeout(timer);
+          delete window[cbName];
+          if (script.parentNode) script.parentNode.removeChild(script);
+        }
+
+        window[cbName] = (data) => {
+          cleanup();
+          resolve(data);
+        };
+
+        script.onerror = () => {
+          cleanup();
+          reject(new Error("JSONP network error"));
+        };
+
+        const sep = url.includes("?") ? "&" : "?";
+        script.src = `${url}${sep}callback=${cbName}&_t=${Date.now()}`;
+        document.body.appendChild(script);
+      });
+    }
+
+    async function postToGoogleSheet(entry) {
+      if (!googleSheetWebhookUrl) return false;
+      const payloadStr = JSON.stringify(entry);
+
+      // 1. Primary POST (no-cors text/plain works across standard & Google Sites browsers)
+      try {
+        await fetch(googleSheetWebhookUrl, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: payloadStr
+        });
+      } catch (err) {
+        console.warn("Primary POST fallback triggered:", err);
+      }
+
+      // 2. Google Sites Sandboxed Iframe Fallback (GET with idempotent ID check on Apps Script)
+      try {
+        const getUrl = `${googleSheetWebhookUrl}${googleSheetWebhookUrl.includes("?") ? "&" : "?"}action=insert&payload=${encodeURIComponent(payloadStr)}`;
+        await jsonpRequest(getUrl);
+      } catch (_) {
+        // Ignore if doPost already succeeded
+      }
+      return true;
+    }
+
+    async function deleteFromGoogleSheet(id) {
+      if (!googleSheetWebhookUrl || !id) return;
+      try {
+        await fetch(googleSheetWebhookUrl, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify({ action: "delete", id })
+        });
+      } catch (_) {}
+      try {
+        const delUrl = `${googleSheetWebhookUrl}${googleSheetWebhookUrl.includes("?") ? "&" : "?"}action=delete&id=${encodeURIComponent(id)}`;
+        await jsonpRequest(delUrl);
+      } catch (_) {}
+    }
+
+    async function fetchSheetDataWithFallback() {
+      const readUrl = `${googleSheetWebhookUrl}${googleSheetWebhookUrl.includes("?") ? "&" : "?"}action=read&_t=${Date.now()}`;
+      try {
+        const res = await fetch(readUrl, { method: "GET", redirect: "follow" });
+        if (res.ok) {
+          return await res.json();
+        }
+      } catch (_) {
+        // Fallback to JSONP for strict Google Sites iframe CORS policies
+      }
+      return await jsonpRequest(readUrl);
+    }
+
+    async function pullFromGoogleSheet(silent = false) {
+      if (!googleSheetWebhookUrl) {
+        if (!silent) showToast("Paste & save your Google Apps Script Web App URL first", true);
+        return;
+      }
+      try {
+        const data = await fetchSheetDataWithFallback();
+        if (data && Array.isArray(data.items)) {
+          let addedCount = 0;
+          let latestNewGuest = "";
+
+          data.items.forEach((sheetItem) => {
+            if (!sheetItem.fullName || deletedRsvpIds.has(String(sheetItem.id))) return;
+
+            const existingIdx = rsvpList.findIndex(
+              (local) =>
+                String(local.id) === String(sheetItem.id) ||
+                (local.fullName === sheetItem.fullName &&
+                  String(local.phone) === String(sheetItem.phone) &&
+                  Math.abs((local.createdAtMs || 0) - (sheetItem.createdAtMs || 0)) < 15000)
+            );
+
+            if (existingIdx === -1) {
+              const newId = String(sheetItem.id || "sheet_" + Date.now() + "_" + Math.random().toString(36).slice(2, 6));
+              const merged = {
+                ...sheetItem,
+                id: newId,
+                sheetSynced: true,
+                syncedFromSheet: true
+              };
+              if (initialLoadCompleted) {
+                newlyArrivedIds.add(newId);
+              }
+              knownRsvpIds.add(newId);
+              rsvpList.unshift(merged);
+              latestNewGuest = sheetItem.fullName;
+              addedCount++;
+            } else {
+              // Update existing record if edited inside Google Sheets
+              rsvpList[existingIdx] = {
+                ...rsvpList[existingIdx],
+                ...sheetItem,
+                id: rsvpList[existingIdx].id,
+                sheetSynced: true
+              };
+            }
+          });
+
+          rsvpList.sort((a, b) => (b.createdAtMs || 0) - (a.createdAtMs || 0));
+
+          if (addedCount > 0) {
+            if (initialLoadCompleted) {
+              onRealtimeEventReceived(`Live Google Sheet Update: ${latestNewGuest} (${addedCount} new)`);
+            } else {
+              updateLiveSyncTimestamp(`Loaded ${addedCount} RSVP(s) from Google Sheet`);
+            }
+            initialLoadCompleted = true;
+            renderAdminDashboard();
+          } else {
+            initialLoadCompleted = true;
+            renderAdminDashboard();
+            if (!silent) {
+              updateLiveSyncTimestamp("Google Sheet is in sync with Admin Portal");
+              showToast("Google Sheet is live & in sync!");
+            }
+          }
+        }
+      } catch (err) {
+        if (!silent) {
+          showToast("Ensure your Apps Script includes the updated doGet() and is deployed to 'Anyone'", true);
+        }
+      }
+    }
+
+    // Continuous 3-Second Live Polling from Google Sheet (Runs automatically when Sheet URL is configured)
+    setInterval(() => {
+      if (googleSheetWebhookUrl) {
+        pullFromGoogleSheet(true);
+      }
+    }, 3000);
+
+    // ---------------------------------------------------------------------
+    // C. CORE REAL-TIME RSVP SAVE HELPER (Used by Main Form & Admin Tester)
+    // ---------------------------------------------------------------------
+    async function saveAndBroadcastRsvp({ fullName, phone, email, attendance, guests, wishes }) {
+      const now = new Date();
+      const tempId = "live_" + now.getTime() + "_" + Math.random().toString(36).slice(2, 6);
+      const entry = {
+        fullName,
+        phone,
+        email: email || "",
+        attendance,
+        guests: attendance === "Joyfully Attending" ? Number(guests || 1) : 0,
+        wishes: wishes || "",
+        timestamp: now.toLocaleString("en-IN", {
+          day: "2-digit",
+          month: "short",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit"
+        }),
+        createdAtMs: now.getTime(),
+        sheetSynced: Boolean(googleSheetWebhookUrl)
+      };
+
+      let finalId = tempId;
+
+      if (db && currentUser) {
+        const rsvpColRef = collection(db, "artifacts", appId, "public", "data", "wedding_rsvps");
+        const docRef = await addDoc(rsvpColRef, entry);
+        finalId = docRef.id;
+      } else {
+        const localEntry = { id: finalId, ...entry };
+        newlyArrivedIds.add(finalId);
+        rsvpList.unshift(localEntry);
+        renderAdminDashboard();
+      }
+
+      const fullRecord = { id: finalId, ...entry };
+
+      // Broadcast instantaneously across tabs/windows
+      if (liveChannel) {
+        liveChannel.postMessage({ type: "NEW_RSVP", entry: fullRecord });
+      }
+
+      // Push immediately to Google Sheets webhook if configured
+      if (googleSheetWebhookUrl) {
+        postToGoogleSheet(fullRecord);
+      }
+
+      updateLiveSyncTimestamp(`Synced RSVP from ${fullName}`);
+      return fullRecord;
+    }
+
+    // ---------------------------------------------------------------------
+    // D. MAIN RSVP FORM SUBMISSION & DYNAMIC ATTENDANCE TOGGLE
+    // ---------------------------------------------------------------------
+    const rsvpForm = document.getElementById("rsvp-form");
+    const guestsWrapper = document.getElementById("guests-count-wrapper");
+    const guestsSelect = document.getElementById("rsvp-guests");
+    const attendanceRadios = document.querySelectorAll('input[name="attendance"]');
+
+    attendanceRadios.forEach((radio) => {
+      radio.addEventListener("change", () => {
+        const selected = document.querySelector('input[name="attendance"]:checked')?.value;
+        if (selected === "Regretfully Unable to Attend") {
+          guestsWrapper.classList.add("opacity-40", "pointer-events-none");
+          guestsSelect.value = "0";
+        } else {
+          guestsWrapper.classList.remove("opacity-40", "pointer-events-none");
+          if (guestsSelect.value === "0") guestsSelect.value = "2";
+        }
+      });
+    });
+
+    rsvpForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const nameInput = document.getElementById("rsvp-name");
+      const phoneInput = document.getElementById("rsvp-phone");
+      const emailInput = document.getElementById("rsvp-email"); // Strictly optional
+      const wishesInput = document.getElementById("rsvp-wishes");
+      const errName = document.getElementById("err-name");
+      const errPhone = document.getElementById("err-phone");
+
+      const fullName = nameInput.value.trim();
+      const phone = phoneInput.value.trim();
+      const email = emailInput.value.trim(); // Optional
+      const attendance = document.querySelector('input[name="attendance"]:checked')?.value || "Joyfully Attending";
+      const guests = attendance === "Joyfully Attending" ? parseInt(guestsSelect.value || "1", 10) : 0;
+      const wishes = wishesInput.value.trim();
+
+      let valid = true;
+      if (!fullName) {
+        errName.classList.remove("hidden");
+        valid = false;
+      } else {
+        errName.classList.add("hidden");
+      }
+
+      if (!phone || phone.length < 6) {
+        errPhone.classList.remove("hidden");
+        valid = false;
+      } else {
+        errPhone.classList.add("hidden");
+      }
+
+      if (!valid) return;
+
+      const submitBtn = document.getElementById("rsvp-submit-btn");
+      const originalBtnHtml = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin"></i><span>Syncing RSVP Live...</span>`;
+
+      try {
+        await saveAndBroadcastRsvp({ fullName, phone, email, attendance, guests, wishes });
+
+        // Show celebratory confirmation state
+        rsvpForm.classList.add("hidden");
+        const successBox = document.getElementById("rsvp-success-box");
+        const successDetail = document.getElementById("rsvp-success-detail");
+        successDetail.textContent =
+          attendance === "Joyfully Attending"
+            ? `Thank you, ${fullName}! Your attendance (${guests} ${guests === 1 ? "Guest" : "Guests"}) has been synced in real time for Sunday, 17th January 2027 @ 08:00 PM at Saifee Mohallah Mawaid, Indore.`
+            : `Thank you, ${fullName}! Your response and heartfelt Duas for the couples have been synced in real time.`;
+        successBox.classList.remove("hidden");
+        playGentleChime();
+        showToast("RSVP synced live! Shukran for your response.");
+        rsvpForm.reset();
+      } catch (err) {
+        console.error("Error saving RSVP:", err);
+        showToast("RSVP recorded in session.", false);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
+    });
+
+    document.getElementById("rsvp-another-btn").addEventListener("click", () => {
+      document.getElementById("rsvp-success-box").classList.add("hidden");
+      rsvpForm.classList.remove("hidden");
+      guestsWrapper.classList.remove("opacity-40", "pointer-events-none");
+    });
+
+    // ---------------------------------------------------------------------
+    // E. ADMIN AUTHENTICATION ("786110"), LIVE TESTER & REAL-TIME TABLE
+    // ---------------------------------------------------------------------
+    const adminLoginModal = document.getElementById("admin-login-modal");
+    const adminLoginCard = document.getElementById("admin-login-card");
+    const adminDashboardModal = document.getElementById("admin-dashboard-modal");
+    const adminPassInput = document.getElementById("admin-password-input");
+    const adminLoginError = document.getElementById("admin-login-error");
+
+    document.getElementById("open-admin-btn").addEventListener("click", () => {
+      adminPassInput.value = "";
+      adminLoginError.classList.add("hidden");
+      adminLoginModal.classList.remove("hidden");
+      adminLoginModal.classList.add("flex");
+      setTimeout(() => adminPassInput.focus(), 80);
+    });
+
+    document.getElementById("close-admin-login-btn").addEventListener("click", () => {
+      adminLoginModal.classList.add("hidden");
+      adminLoginModal.classList.remove("flex");
+    });
+
+    document.getElementById("admin-login-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const entered = adminPassInput.value.trim();
+      if (entered === ADMIN_PASSWORD) {
+        adminLoginModal.classList.add("hidden");
+        adminLoginModal.classList.remove("flex");
+        adminDashboardModal.classList.remove("hidden");
+        updateSheetConnectionBadge();
+        renderAdminDashboard();
+        showToast("Real-Time Admin Portal Unlocked");
+      } else {
+        adminLoginError.classList.remove("hidden");
+        adminLoginCard.classList.remove("shake-anim");
+        void adminLoginCard.offsetWidth;
+        adminLoginCard.classList.add("shake-anim");
+      }
+    });
+
+    document.getElementById("close-admin-dashboard-btn").addEventListener("click", () => {
+      adminDashboardModal.classList.add("hidden");
+    });
+
+    // Live Sound Toggle in Admin Header
+    document.getElementById("toggle-live-sound-btn").addEventListener("click", () => {
+      liveSoundEnabled = !liveSoundEnabled;
+      const icon = document.getElementById("live-sound-icon");
+      const label = document.getElementById("live-sound-label");
+      const btn = document.getElementById("toggle-live-sound-btn");
+      if (liveSoundEnabled) {
+        icon.className = "fa-solid fa-volume-high";
+        label.textContent = "Live Chime: ON";
+        btn.classList.replace("text-stone-400", "text-emerald-300");
+        playGentleChime();
+      } else {
+        icon.className = "fa-solid fa-volume-xmark";
+        label.textContent = "Live Chime: OFF";
+        btn.classList.replace("text-emerald-300", "text-stone-400");
+      }
+    });
+
+    // In-Dashboard Live Sync Tester Drawer
+    const liveTestDrawer = document.getElementById("live-test-drawer");
+    document.getElementById("toggle-live-test-drawer-btn").addEventListener("click", () => {
+      liveTestDrawer.classList.toggle("hidden");
+      if (!liveTestDrawer.classList.contains("hidden")) {
+        document.getElementById("quick-name").focus();
+      }
+    });
+    document.getElementById("close-live-test-drawer-btn").addEventListener("click", () => {
+      liveTestDrawer.classList.add("hidden");
+    });
+
+    document.getElementById("admin-quick-rsvp-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const fullName = document.getElementById("quick-name").value.trim();
+      const phone = document.getElementById("quick-phone").value.trim();
+      const email = document.getElementById("quick-email").value.trim();
+      const attendance = document.getElementById("quick-attendance").value;
+      const guests = parseInt(document.getElementById("quick-guests").value || "1", 10);
+
+      if (!fullName || !phone) return;
+
+      await saveAndBroadcastRsvp({
+        fullName,
+        phone,
+        email,
+        attendance,
+        guests,
+        wishes: "Mubarakbad & heartfelt Duas!"
+      });
+
+      e.target.reset();
+      document.getElementById("quick-guests").value = "2";
+    });
+
+    // Render Admin KPIs & Real-Time Table
+    function renderAdminDashboard() {
+      const searchVal = (document.getElementById("admin-search-input")?.value || "").toLowerCase();
+      const filterVal = document.getElementById("admin-filter-select")?.value || "ALL";
+
+      // KPIs across all responses
+      const totalRsvps = rsvpList.length;
+      let totalGuests = 0;
+      let attendingCount = 0;
+      let declinedCount = 0;
+
+      rsvpList.forEach((item) => {
+        if (item.attendance === "Joyfully Attending") {
+          attendingCount++;
+          totalGuests += Number(item.guests || 0);
+        } else {
+          declinedCount++;
+        }
+      });
+
+      document.getElementById("kpi-total-rsvps").textContent = totalRsvps;
+      document.getElementById("kpi-total-guests").textContent = totalGuests;
+      document.getElementById("kpi-attending-count").textContent = attendingCount;
+      document.getElementById("kpi-declined-count").textContent = declinedCount;
+
+      // Filter rows
+      const filtered = rsvpList.filter((item) => {
+        const matchesFilter = filterVal === "ALL" || item.attendance === filterVal;
+        const hay = `${item.fullName || ""} ${item.phone || ""} ${item.email || ""} ${item.wishes || ""}`.toLowerCase();
+        const matchesSearch = !searchVal || hay.includes(searchVal);
+        return matchesFilter && matchesSearch;
+      });
+
+      const tbody = document.getElementById("admin-rsvp-tbody");
+      const emptyState = document.getElementById("admin-empty-state");
+      tbody.innerHTML = "";
+
+      if (filtered.length === 0) {
+        emptyState.classList.remove("hidden");
+        return;
+      }
+      emptyState.classList.add("hidden");
+
+      filtered.forEach((item) => {
+        const tr = document.createElement("tr");
+        const isNewLive = newlyArrivedIds.has(item.id);
+        tr.className = `hover:bg-stone-50 transition ${isNewLive ? "row-live-flash" : ""}`;
+
+        const isAttending = item.attendance === "Joyfully Attending";
+        const badgeHtml = isAttending
+          ? `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800"><i class="fa-solid fa-check"></i> Attending</span>`
+          : `<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800">Unable to Attend</span>`;
+
+        const newBadge = isNewLive
+          ? `<span class="ml-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-200 text-amber-900">LIVE NEW</span>`
+          : "";
+
+        const cleanPhone = String(item.phone || "").replace(/[^0-9+]/g, "");
+        const syncBadge = googleSheetWebhookUrl || item.sheetSynced || item.syncedFromSheet
+          ? `<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700"><i class="fa-solid fa-cloud-check"></i> Cloud + Sheet</span>`
+          : `<span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700"><i class="fa-solid fa-bolt"></i> Live Synced</span>`;
+
+        tr.innerHTML = `
+          <td class="py-3 px-4 whitespace-nowrap text-stone-500 text-xs">${escapeHtml(item.timestamp || "—")}</td>
+          <td class="py-3 px-4 font-semibold text-espresso">${escapeHtml(item.fullName || "—")}${newBadge}</td>
+          <td class="py-3 px-4 whitespace-nowrap">
+            <a href="https://wa.me/${escapeHtml(cleanPhone)}" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-1.5 text-stone-700 hover:text-emerald-700 font-medium">
+              <i class="fa-brands fa-whatsapp text-emerald-600"></i>
+              <span>${escapeHtml(item.phone || "—")}</span>
+            </a>
+          </td>
+          <td class="py-3 px-4 text-stone-500">${escapeHtml(item.email || "—")}</td>
+          <td class="py-3 px-4 whitespace-nowrap">${badgeHtml}</td>
+          <td class="py-3 px-4 text-center font-bold">${isAttending ? Number(item.guests || 1) : 0}</td>
+          <td class="py-3 px-4 max-w-xs truncate" title="${escapeHtml(item.wishes || "")}">${escapeHtml(item.wishes || "—")}</td>
+          <td class="py-3 px-4 text-center whitespace-nowrap">${syncBadge}</td>
+          <td class="py-3 px-4 text-right whitespace-nowrap">
+            <button type="button" data-delete-id="${escapeHtml(item.id)}"
+              class="text-red-500 hover:text-red-700 px-2 py-1 rounded hover:bg-red-50 transition cursor-pointer" title="Delete entry">
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Attach delete handlers
+      tbody.querySelectorAll("[data-delete-id]").forEach((btn) => {
+        btn.addEventListener("click", async () => {
+          const id = btn.getAttribute("data-delete-id");
+          try {
+            if (db && currentUser && !id.startsWith("live_") && !id.startsWith("sheet_")) {
+              await deleteDoc(doc(db, "artifacts", appId, "public", "data", "wedding_rsvps", id));
+            } else {
+              rsvpList = rsvpList.filter((r) => r.id !== id);
+              renderAdminDashboard();
+            }
+            if (liveChannel) {
+              liveChannel.postMessage({ type: "DELETE_RSVP", id });
+            }
+            deletedRsvpIds.add(String(id));
+            if (googleSheetWebhookUrl) {
+              deleteFromGoogleSheet(id);
+            }
+            updateLiveSyncTimestamp("Entry deleted in real time");
+            showToast("RSVP entry deleted");
+          } catch (err) {
+            console.error("Failed to delete entry:", err);
+            showToast("Could not delete entry", true);
+          }
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    document.getElementById("admin-search-input").addEventListener("input", renderAdminDashboard);
+    document.getElementById("admin-filter-select").addEventListener("change", renderAdminDashboard);
+
+    // ---------------------------------------------------------------------
+    // F. GOOGLE SHEETS CONFIGURATION & CSV EXPORT
+    // ---------------------------------------------------------------------
+    document.getElementById("toggle-script-guide-btn").addEventListener("click", () => {
+      document.getElementById("script-guide-drawer").classList.toggle("hidden");
+    });
+
+    document.getElementById("copy-apps-script-btn").addEventListener("click", () => {
+      const code = document.getElementById("apps-script-code").innerText;
+      const tempArea = document.createElement("textarea");
+      tempArea.value = code;
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempArea);
+      showToast("2-Way Google Apps Script code copied to clipboard!");
+    });
+
+    document.getElementById("save-sheet-url-btn").addEventListener("click", async () => {
+      const urlVal = document.getElementById("google-sheet-url-input").value.trim();
+      googleSheetWebhookUrl = urlVal;
+      updateSheetConnectionBadge();
+      if (liveChannel) {
+        liveChannel.postMessage({ type: "WEBHOOK_UPDATED", webhookUrl: urlVal });
+      }
+      try {
+        if (db && currentUser) {
+          const settingsDocRef = doc(db, "artifacts", appId, "public", "data", "wedding_settings", "sheet_config");
+          await setDoc(settingsDocRef, { webhookUrl: urlVal, updatedAt: Date.now() });
+        }
+        if (urlVal) {
+          await pullFromGoogleSheet(false);
+        }
+        showToast("Google Sheet Live Sync Activated!");
+      } catch (err) {
+        console.error("Error saving webhook URL:", err);
+        showToast("Webhook URL active for current session");
+      }
+    });
+
+    // Copy Complete Ready-to-Embed HTML for Google Sites with the Google Sheet URL Baked In
+    document.getElementById("copy-google-sites-html-btn").addEventListener("click", () => {
+      const currentUrl = (document.getElementById("google-sheet-url-input").value || googleSheetWebhookUrl || "").trim();
+      if (!currentUrl) {
+        showToast("Please paste your Google Apps Script Web App URL in the box above first!", true);
+        document.getElementById("google-sheet-url-input").focus();
+        return;
+      }
+      googleSheetWebhookUrl = currentUrl;
+      updateSheetConnectionBadge();
+
+      let fullHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+      fullHtml = fullHtml.replace(
+        /const DEFAULT_GOOGLE_SHEET_WEB_APP_URL = "[^"]*";/,
+        `const DEFAULT_GOOGLE_SHEET_WEB_APP_URL = "${currentUrl.replace(/"/g, '\\"')}";`
+      );
+
+      const tempArea = document.createElement("textarea");
+      tempArea.value = fullHtml;
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempArea);
+      showToast("Copied full Google Sites HTML with your live Google Sheet URL baked in!");
+    });
+
+    // Share Live Google Sites Invitation Link Button
+    document.getElementById("share-live-site-btn")?.addEventListener("click", () => {
+      const shareText = `You are cordially invited to the Wedding of Murtaza weds Rukaiya & Jamila weds Abbas hosted by the Shakurwala Family on Sunday, 17th January 2027 @ 08:00 PM at Saifee Mohallah Mawaid, Indore.\n\nKindly view the invitation & RSVP here:\n${LIVE_GOOGLE_SITES_URL}`;
+      const waUrl = `https://wa.me/?text=${encodeURIComponent(shareText)}`;
+      window.open(waUrl, "_blank", "noopener,noreferrer");
+    });
+
+    document.getElementById("pull-from-sheet-btn").addEventListener("click", () => {
+      pullFromGoogleSheet(false);
+    });
+
+    document.getElementById("sync-all-sheet-btn").addEventListener("click", async () => {
+      if (!googleSheetWebhookUrl) {
+        showToast("Please paste & save your Google Apps Script Web App URL first", true);
+        return;
+      }
+      if (rsvpList.length === 0) {
+        showToast("No RSVPs to push yet", true);
+        return;
+      }
+      showToast(`Pushing ${rsvpList.length} responses to Google Sheet...`);
+      for (const item of rsvpList) {
+        await postToGoogleSheet(item);
+      }
+      updateLiveSyncTimestamp(`Pushed ${rsvpList.length} RSVPs to Google Sheet`);
+      showToast("All RSVPs synced to your Google Sheet!");
+    });
+
+    document.getElementById("export-csv-btn").addEventListener("click", () => {
+      if (rsvpList.length === 0) {
+        showToast("No RSVP responses to export yet", true);
+        return;
+      }
+      const headers = ["Timestamp", "Full Name", "Phone Number", "Email (Optional)", "Attendance", "Number of Guests", "Wishes"];
+      const rows = rsvpList.map((r) => [
+        `"${(r.timestamp || "").replace(/"/g, '""')}"`,
+        `"${(r.fullName || "").replace(/"/g, '""')}"`,
+        `"${(r.phone || "").replace(/"/g, '""')}"`,
+        `"${(r.email || "—").replace(/"/g, '""')}"`,
+        `"${(r.attendance || "").replace(/"/g, '""')}"`,
+        r.attendance === "Joyfully Attending" ? Number(r.guests || 1) : 0,
+        `"${(r.wishes || "").replace(/"/g, '""')}"`
+      ]);
+      const csvContent = "\uFEFF" + [headers.join(","), ...rows.map((e) => e.join(","))].join("\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Shakurwala_Wedding_RSVPs.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast("Downloaded Google Sheet compatible CSV!");
+    });
+
+    // ---------------------------------------------------------------------
+    // G. LIVE COUNTDOWN TIMER (Target: 17th January 2027 @ 08:00 PM IST)
+    // ---------------------------------------------------------------------
+    const targetWeddingDate = new Date("2027-01-17T20:00:00+05:30").getTime();
+
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = Math.max(0, targetWeddingDate - now);
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / 1000 / 60) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("cd-days").textContent = String(days).padStart(2, "0");
+      document.getElementById("cd-hours").textContent = String(hours).padStart(2, "0");
+      document.getElementById("cd-mins").textContent = String(mins).padStart(2, "0");
+      document.getElementById("cd-secs").textContent = String(secs).padStart(2, "0");
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ---------------------------------------------------------------------
+    // H. ENVELOPE OPENING, SCROLL REVEAL & GENTLE AUDIO CHIME
+    // ---------------------------------------------------------------------
+    function playGentleChime() {
+      try {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (!AudioCtx) return;
+        const ctx = new AudioCtx();
+        const notes = [523.25, 659.25, 783.99, 1046.5]; // C5, E5, G5, C6
+        notes.forEach((freq, i) => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.12);
+          gain.gain.setValueAtTime(0.001, ctx.currentTime + i * 0.12);
+          gain.gain.exponentialRampToValueAtTime(0.08, ctx.currentTime + i * 0.12 + 0.04);
+          gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + i * 0.12 + 1.1);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(ctx.currentTime + i * 0.12);
+          osc.stop(ctx.currentTime + i * 0.12 + 1.15);
+        });
+      } catch (_) {}
+    }
+
+    function triggerStaggeredReveals() {
+      const items = document.querySelectorAll(".reveal-item");
+      items.forEach((el, idx) => {
+        setTimeout(() => {
+          el.classList.add("visible");
+        }, idx * 160);
+      });
+    }
+
+    document.getElementById("open-invitation-btn")?.addEventListener("click", () => {
+      const curtain = document.getElementById("welcome-curtain");
+      curtain?.classList.add("curtain-open");
+      playGentleChime();
+      triggerStaggeredReveals();
+    });
+
+    document.getElementById("replay-envelope-btn")?.addEventListener("click", () => {
+      const curtain = document.getElementById("welcome-curtain");
+      curtain?.classList.remove("curtain-open");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // IntersectionObserver fallback so scrolling reveals any remaining items
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll(".reveal-item").forEach((el) => observer.observe(el));
+
+    // ---------------------------------------------------------------------
+    // I. FLOATING ROSE-GOLD DUST PARTICLES CANVAS
+    // ---------------------------------------------------------------------
+    const canvas = document.getElementById("particle-canvas");
+    const pCtx = canvas.getContext("2d");
+    let particles = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    function createParticles() {
+      const count = Math.min(38, Math.floor(window.innerWidth / 32));
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 2.2 + 0.8,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: -Math.random() * 0.45 - 0.15,
+        alpha: Math.random() * 0.55 + 0.2
+      }));
+    }
+
+    function animateParticles() {
+      pCtx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.y < -10) p.y = canvas.height + 10;
+        if (p.x < -10) p.x = canvas.width + 10;
+        if (p.x > canvas.width + 10) p.x = -10;
+
+        pCtx.beginPath();
+        pCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        pCtx.fillStyle = `rgba(200, 157, 124, ${p.alpha})`;
+        pCtx.fill();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+
+    window.onload = function () {
+      resizeCanvas();
+      createParticles();
+      animateParticles();
+      updateSheetConnectionBadge();
+      initCloudStorage();
+      if (googleSheetWebhookUrl) {
+        pullFromGoogleSheet(true);
+      }
+    };
+  </script>
+</body>
+</html>
